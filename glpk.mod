@@ -15,7 +15,7 @@ param p{(i,j) in E};
 /* x(i,j) = 1 se aresta está no caminho, 0 caso contrário */
 /* v(i) = 1 se vertice ja foi vizitado, 0 caso contrário */
 var x{(i,j) in E}, binary;
-var v{(i) in V}, binary;
+var v{(i) in V} >= 0;
 
 
 /* FUNCAO OBJETIVO */
@@ -36,13 +36,12 @@ s.t. departure{j in V: j!=0}: sum{(0,j) in E} x[0,j] = 1;
 /* Chegar no nó N */
 s.t. arrival{i in V: i!=N}: sum{(i,N) in E} x[i,N] = 1;
 
-/* Restricao de precedencia */
-s.t. precedence{i,j in V}: x[i,j] * vj = 1;
+/* Restricao de precedencia (ta certa?)*/
+s.t. precedence{i in N, j in V: i!=j and i!=0 and j!=N}: v[i] + 1 <= v[j];
 
 /* TODO parte de conservacao (subtours) */
 
 /* TODO confirmar que n ta dando loop */
-/* TODO restricao de precedencia */
 
 solve;
 
