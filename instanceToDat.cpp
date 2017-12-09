@@ -34,10 +34,10 @@ int main(){
 			cin >> v;
       if (v >= 0) {
         distance[i][j] = v;
-        precedence[i][j] = false;
+        precedence[j][i] = false;
       } else { // -1
         distance[i][j] = INF;
-        precedence[i][j] = true; // J precede I
+        precedence[j][i] = true; // J precede I
       }
 		}
 	}
@@ -45,16 +45,21 @@ int main(){
   // Output "data" info
   cout << "data;" << endl << "param n := " << dimension;
 
-  cout << ";" << endl << "set E := ";
+  /*cout << "set V := ";
+  for (size_t i = 0; i < dimension; i++) {
+    cout << i << " ";
+  }*/
+
+  cout << ";" << endl << "set E:= ";
   for (size_t i = 1; i < dimension; i++) { // TODO verificar se ta certo esses valores e a variavel
     cout << i << " ";
   }
 
-	cout << ";" << endl << "param c:" << endl;
+	cout << ";" << endl << "param c: ";
   for (size_t i = 0; i < dimension; i++) {
     cout << i << " ";
   }
-  cout << ":=" << endl;
+  cout << endl << ":=" << endl;
 
 	for (size_t i = 0; i < dimension; i++) {
 		cout << i << " ";
@@ -64,11 +69,11 @@ int main(){
 		cout << endl;
 	}
 
-	cout << ";" << endl << "param p:" << endl;
+	cout << ";" << endl << "param p: ";
   for (size_t i = 0; i < dimension; i++) {
     cout << i << " ";
   }
-  cout << ":=" << endl;
+  cout << endl << ":=" << endl;
 
 	for (size_t i = 0; i < dimension; i++) {
 		cout << i << " ";
