@@ -43,17 +43,14 @@ int main(){
 	}
 
   // Output "data" info
-  cout << "data;" << endl << "param n := " << dimension;
+  cout << "data;" << endl << "param n:= " << dimension << ";" << endl;
+
+  cout << "param M:= 99999"; // TODO ta influenciando o resultado, ta certo? quant omaior, melhor o resuldiotado obtido
 
   /*cout << "set V := ";
   for (size_t i = 0; i < dimension; i++) {
     cout << i << " ";
   }*/
-
-  cout << ";" << endl << "set E:= ";
-  for (size_t i = 1; i < dimension; i++) { // TODO verificar se ta certo esses valores e a variavel
-    cout << i << " ";
-  }
 
 	cout << ";" << endl << "param c: ";
   for (size_t i = 0; i < dimension; i++) {
