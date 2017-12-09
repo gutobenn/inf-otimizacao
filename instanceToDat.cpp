@@ -7,6 +7,7 @@ using namespace std;
 static int INF = INT_MAX;
 
 int main(){
+	string initialInfo;
 
 	// Get irrelevant information from the instance
 	for (int i = 0; i < 3; i++) {
@@ -33,31 +34,51 @@ int main(){
 			cin >> v;
       if (v >= 0) {
         distance[i][j] = v;
-        precedence[j][i] = false;
+        precedence[i][j] = false;
       } else { // -1
         distance[i][j] = INF;
-        precedence[j][i] = true; // J precede I
+        precedence[i][j] = true; // J precede I
       }
 		}
 	}
 
   // Output "data" info
-  cout << "data;" << endl << "param n:= " << dimension << endl;
+  cout << "data;" << endl << "param n := " << dimension;
 
-  cout << "set V:= ";
-  for (size_t i = 0; i < dimension; i++) {
-    cout << i << " ";
-  }
-	cout << endl;
-
-  cout << ";" << endl << "set E:= ";
+  cout << ";" << endl << "set E := ";
   for (size_t i = 1; i < dimension; i++) { // TODO verificar se ta certo esses valores e a variavel
     cout << i << " ";
   }
 
-	/*
-  cout << ";" << endl << "param INF:= 1000000;" << endl << "param c:" << endl;
-  */
+	cout << ";" << endl << "param c:" << endl;
+  for (size_t i = 0; i < dimension; i++) {
+    cout << i << " ";
+  }
+  cout << ":=" << endl;
+
+	for (size_t i = 0; i < dimension; i++) {
+		cout << i << " ";
+		for (size_t j = 0; j < dimension; j++) {
+			cout << distance[i][j] << " ";
+		}
+		cout << endl;
+	}
+
+	cout << ";" << endl << "param p:" << endl;
+  for (size_t i = 0; i < dimension; i++) {
+    cout << i << " ";
+  }
+  cout << ":=" << endl;
+
+	for (size_t i = 0; i < dimension; i++) {
+		cout << i << " ";
+		for (size_t j = 0; j < dimension; j++) {
+			cout << precedence[i][j] << " ";
+		}
+		cout << endl;
+	}
+
+	cout << ";" << endl << endl << "end;" << endl;
 
 	return 0;
 }

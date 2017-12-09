@@ -50,10 +50,10 @@ int main(int argc, const char * argv[]) {
 			ifs >> v;
       if (v >= 0) {
         distance[i][j] = v;
-        precedence[j][i] = false;
+        precedence[i][j] = false;
       } else { // -1
         distance[i][j] = INF;
-        precedence[j][i] = true; // J precedes I
+        precedence[i][j] = true; // J precedes I
       }
 		}
 	}
