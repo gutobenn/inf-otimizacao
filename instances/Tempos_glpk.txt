@@ -8,6 +8,8 @@ ESC25
 Time used:   129.6 secs
 
 ESC47
+TIME LIMIT EXCEEDED; SEARCH TERMINATED
+Time used:   3600.2 secs
 
 ESC78
 
