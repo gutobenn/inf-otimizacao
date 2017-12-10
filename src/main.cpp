@@ -67,7 +67,26 @@ int getPathCost(vector<int> path, vector<vector<int> > costs) {
     return total;
 }
 
+bool isValidPath(vector<int> path, vector<vector<int> > costs){
+    vector<int> waitingForPrecedent; // Store nodes waiting for a precedent node still not visited
+    int nodeIndex;
+
+    for (size_t i = 0; i < path.size() - 1; i++) {
+        waitingForPrecedent.push_back(path[i]);
+        nodeIndex = path[i]-1;
+        for (size_t j = 0; j < path.size(); j++) {
+            if(costs[nodeIndex][j] == -1 && !vectorHasElement(waitingForPrecedent, j+1)){
+                return false;
+            }
+        }
+
+        return true;
+    }
+}
+
+
 void twoOptMove(vector<int> *path, int i, int j) {
+    // i e j são os indices dos vértices no vetor path
     // Based on https://stackoverflow.com/questions/33043991/trouble-with-the-implementation-of-2-opt-and-3-opt-search-in-the-resolution-of-t
 
     vector<int> helpPath;
@@ -78,9 +97,9 @@ void twoOptMove(vector<int> *path, int i, int j) {
         helpPath[k] = (*path)[k];
     }
     for(int k = 0; k < j - i; k++) {
-        helpPath[a+k+1] = (*path)[b-k];
+        helpPath[i+k+1] = (*path)[j-k];
     }
-    for(int k = j + 1; k < size; k++) {
+    for(int k = j + 1; k < path->size(); k++) {
         helpPath[k] = (*path)[k];
     }
 
@@ -88,11 +107,57 @@ void twoOptMove(vector<int> *path, int i, int j) {
     /*for(int i = 0; i < size; i++){
         cities[i] = help_cities[i];
     }*/
-    (*path) = helpPath; // TODO testar, talvez esteja errado
+    (*path) = helpPath;
 }
+
+
+pair<int, int> twoOptSearch(vector<int> path, vector<vector<int> > costs){
+    // Based on https://stackoverflow.com/questions/33043991/trouble-with-the-implementation-of-2-opt-and-3-opt-search-in-the-resolution-of-t
+
+    int iMin = -1, jMin = -1, change, oldCost, newCost, maxSaving = 0;
+
+    // repeat until there are not new improvement
+    for(int i = 1; i < path.size() - 3; i++){
+        for(int j = i + 1; j < path.size() - 2; j++){
+            cout << "twooptsearch: i = " << i << " j = " << j << endl;
+            if(isTabu(i,j)){
+                cout << "twooptsearch: isTabu=true" << endl;
+                break;
+            }
+
+            oldCost = getPathCost(path, costs);
+            cout << "twooptsearch: oldCost = " << oldCost << endl;
+
+            vector<int> newPath = path;
+            twoOptMove(&path, i, j);
+            newCost = getPathCost(path, costs);
+            cout << "twooptsearch: newCost = " << newCost << endl;
+
+            change = newCost - oldCost;
+
+            cout << "twooptsearch: change = " << change << "   maxsaving = " << maxSaving << endl;
+
+            if(change < maxSaving && isValidPath(newPath, costs)){
+                cout << "twooptsearch: entrou no if cache < maxsaving e valid path" << endl;
+                iMin = i;
+                jMin = j;
+                maxSaving = change;
+            }
+
+            // TODO colocar aquele else?
+
+        }
+    }
+
+    addRestrictionToTabuList(iMin, jMin);
+    return make_pair(iMin, jMin);
+
+}
+
 
 /* STARTING CURRENT SOLUTION */
 int getStartingCurrentSolution(vector<int> *tempPath, int dimension, vector<vector<int> > costs) {
+	// TODO comentar essa função
     vector<int> waitingForPrecedent; // Store nodes waiting for a precedent node still not visited
     int currentNodeIndex = 0, minCostFound, nextNodeIndex, totalCost = 0;
     bool foundNextNode, validNextNode;
@@ -213,21 +278,25 @@ int main(int argc, const char * argv[]) {
 
 
     while(iterationsCounter--) {
-        /* TODO Fazer e renomear!!
-        pair<int, int> maxMove = twoOptSearch(costs, tempPath);
-        if(maxMove.first == -1){
+        cout << "entrou no while" << endl;
+        // TODO RENOMEAR cosias
+        pair<int, int> bestMove = twoOptSearch(tempPath, costs);
+        if(bestMove.first == -1){
+            cout << "entrou no break";
             break;
         }
 
-        twoOptMove(&tempPath, maxMove.i, maxMove.j);
+        cout << "antes de mover" << endl;
+        twoOptMove(&tempPath, bestMove.first, bestMove.second);
         tempCost = getPathCost(tempPath, costs);
 
-        addRestrictionToTabuList(maxMove); */
+        //addRestrictionToTabuList(maxMove); TODO ja ta na lista tabu, acho q nao rprecisa disso. confirmar
 
         if(tempCost < bestCost) {
             bestCost = tempCost;
             bestPath = tempPath;
             iterationsCounter = MAX_ITERATIONS;
+            cout << "entrou no if do while" << endl;
         }
     }
 

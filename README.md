@@ -4,6 +4,7 @@ Sequential Ordering Problem com Busca Tabu
 
 ## TODO
 - Como compilar e usar
+- verificar TODOs
 
 ## Instance to dat
 e.g:
