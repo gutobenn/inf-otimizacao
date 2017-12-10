@@ -1,0 +1,2444 @@
+Problem:    glpk
+Rows:       871
+Columns:    731 (704 integer, 704 binary)
+Non-zeros:  4286
+Status:     INTEGER OPTIMAL
+Objective:  total = 1681 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 total                    1681                             
+     2 leave[0]                    1             1             = 
+     3 leave[1]                    1             1             = 
+     4 leave[2]                    1             1             = 
+     5 leave[3]                    1             1             = 
+     6 leave[4]                    1             1             = 
+     7 leave[5]                    1             1             = 
+     8 leave[6]                    1             1             = 
+     9 leave[7]                    1             1             = 
+    10 leave[8]                    1             1             = 
+    11 leave[9]                    1             1             = 
+    12 leave[10]                   1             1             = 
+    13 leave[11]                   1             1             = 
+    14 leave[12]                   1             1             = 
+    15 leave[13]                   1             1             = 
+    16 leave[14]                   1             1             = 
+    17 leave[15]                   1             1             = 
+    18 leave[16]                   1             1             = 
+    19 leave[17]                   1             1             = 
+    20 leave[18]                   1             1             = 
+    21 leave[19]                   1             1             = 
+    22 leave[20]                   1             1             = 
+    23 leave[21]                   1             1             = 
+    24 leave[22]                   1             1             = 
+    25 leave[23]                   1             1             = 
+    26 leave[24]                   1             1             = 
+    27 leave[25]                   1             1             = 
+    28 enter[1]                    1             1             = 
+    29 enter[2]                    1             1             = 
+    30 enter[3]                    1             1             = 
+    31 enter[4]                    1             1             = 
+    32 enter[5]                    1             1             = 
+    33 enter[6]                    1             1             = 
+    34 enter[7]                    1             1             = 
+    35 enter[8]                    1             1             = 
+    36 enter[9]                    1             1             = 
+    37 enter[10]                   1             1             = 
+    38 enter[11]                   1             1             = 
+    39 enter[12]                   1             1             = 
+    40 enter[13]                   1             1             = 
+    41 enter[14]                   1             1             = 
+    42 enter[15]                   1             1             = 
+    43 enter[16]                   1             1             = 
+    44 enter[17]                   1             1             = 
+    45 enter[18]                   1             1             = 
+    46 enter[19]                   1             1             = 
+    47 enter[20]                   1             1             = 
+    48 enter[21]                   1             1             = 
+    49 enter[22]                   1             1             = 
+    50 enter[23]                   1             1             = 
+    51 enter[24]                   1             1             = 
+    52 enter[25]                   1             1             = 
+    53 enter[26]                   1             1             = 
+    54 leave_last[0]
+                                   0            -0             = 
+    55 leave_last[1]
+                                   0            -0             = 
+    56 leave_last[2]
+                                   0            -0             = 
+    57 leave_last[3]
+                                   0            -0             = 
+    58 leave_last[4]
+                                   0            -0             = 
+    59 leave_last[5]
+                                   0            -0             = 
+    60 leave_last[6]
+                                   0            -0             = 
+    61 leave_last[7]
+                                   0            -0             = 
+    62 leave_last[8]
+                                   0            -0             = 
+    63 leave_last[9]
+                                   0            -0             = 
+    64 leave_last[10]
+                                   0            -0             = 
+    65 leave_last[11]
+                                   0            -0             = 
+    66 leave_last[12]
+                                   0            -0             = 
+    67 leave_last[13]
+                                   0            -0             = 
+    68 leave_last[14]
+                                   0            -0             = 
+    69 leave_last[15]
+                                   0            -0             = 
+    70 leave_last[16]
+                                   0            -0             = 
+    71 leave_last[17]
+                                   0            -0             = 
+    72 leave_last[18]
+                                   0            -0             = 
+    73 leave_last[19]
+                                   0            -0             = 
+    74 leave_last[20]
+                                   0            -0             = 
+    75 leave_last[21]
+                                   0            -0             = 
+    76 leave_last[22]
+                                   0            -0             = 
+    77 leave_last[23]
+                                   0            -0             = 
+    78 leave_last[24]
+                                   0            -0             = 
+    79 leave_last[25]
+                                   0            -0             = 
+    80 leave_last[26]
+                                   0            -0             = 
+    81 enter_first[0]
+                                   0            -0             = 
+    82 enter_first[1]
+                                   0            -0             = 
+    83 enter_first[2]
+                                   0            -0             = 
+    84 enter_first[3]
+                                   0            -0             = 
+    85 enter_first[4]
+                                   0            -0             = 
+    86 enter_first[5]
+                                   0            -0             = 
+    87 enter_first[6]
+                                   0            -0             = 
+    88 enter_first[7]
+                                   0            -0             = 
+    89 enter_first[8]
+                                   0            -0             = 
+    90 enter_first[9]
+                                   0            -0             = 
+    91 enter_first[10]
+                                   0            -0             = 
+    92 enter_first[11]
+                                   0            -0             = 
+    93 enter_first[12]
+                                   0            -0             = 
+    94 enter_first[13]
+                                   0            -0             = 
+    95 enter_first[14]
+                                   0            -0             = 
+    96 enter_first[15]
+                                   0            -0             = 
+    97 enter_first[16]
+                                   0            -0             = 
+    98 enter_first[17]
+                                   0            -0             = 
+    99 enter_first[18]
+                                   0            -0             = 
+   100 enter_first[19]
+                                   0            -0             = 
+   101 enter_first[20]
+                                   0            -0             = 
+   102 enter_first[21]
+                                   0            -0             = 
+   103 enter_first[22]
+                                   0            -0             = 
+   104 enter_first[23]
+                                   0            -0             = 
+   105 enter_first[24]
+                                   0            -0             = 
+   106 enter_first[25]
+                                   0            -0             = 
+   107 enter_first[26]
+                                   0            -0             = 
+   108 precedence[0,1]
+                                  -3                          -1 
+   109 precedence[0,2]
+                                 -13                          -1 
+   110 precedence[0,3]
+                                  -1                          -1 
+   111 precedence[0,4]
+                                  -7                          -1 
+   112 precedence[0,5]
+                              -99988                          -1 
+   113 precedence[0,6]
+                                 -11                          -1 
+   114 precedence[0,7]
+                                  -9                          -1 
+   115 precedence[0,8]
+                                  -6                          -1 
+   116 precedence[0,9]
+                                  -2                          -1 
+   117 precedence[0,10]
+                              -99986                          -1 
+   118 precedence[0,11]
+                                  -8                          -1 
+   119 precedence[0,12]
+                              -99989                          -1 
+   120 precedence[0,13]
+                                  -4                          -1 
+   121 precedence[0,14]
+                                 -10                          -1 
+   122 precedence[0,15]
+                              -99990                          -1 
+   123 precedence[0,16]
+                                 -12                          -1 
+   124 precedence[0,17]
+                              -99992                          -1 
+   125 precedence[0,18]
+                              -99995                          -1 
+   126 precedence[0,19]
+                              -99987                          -1 
+   127 precedence[0,20]
+                                  -5                          -1 
+   128 precedence[0,21]
+                              -99991                          -1 
+   129 precedence[0,22]
+                              -99996                          -1 
+   130 precedence[0,23]
+                              -99997                          -1 
+   131 precedence[0,24]
+                              -99993                          -1 
+   132 precedence[0,25]
+                              -99994                          -1 
+   133 precedence[0,26]
+                              -99998                          -1 
+   134 precedence[1,6]
+                                  -8                          -1 
+   135 precedence[1,11]
+                                  -5                          -1 
+   136 precedence[1,12]
+                              -99986                          -1 
+   137 precedence[1,16]
+                                  -9                          -1 
+   138 precedence[1,19]
+                              -99984                          -1 
+   139 precedence[1,26]
+                              -99995                          -1 
+   140 precedence[2,26]
+                              -99985                          -1 
+   141 precedence[3,26]
+                              -99997                          -1 
+   142 precedence[4,26]
+                              -99991                          -1 
+   143 precedence[5,25]
+                                  -6                          -1 
+   144 precedence[5,26]
+                                 -10                          -1 
+   145 precedence[6,12]
+                              -99978                          -1 
+   146 precedence[6,26]
+                              -99987                          -1 
+   147 precedence[7,26]
+                              -99989                          -1 
+   148 precedence[8,12]
+                              -99983                          -1 
+   149 precedence[8,26]
+                              -99992                          -1 
+   150 precedence[9,26]
+                              -99996                          -1 
+   151 precedence[10,26]
+                                 -12                          -1 
+   152 precedence[11,19]
+                              -99979                          -1 
+   153 precedence[11,26]
+                              -99990                          -1 
+   154 precedence[12,26]
+                                  -9                          -1 
+   155 precedence[13,15]
+                              -99986                          -1 
+   156 precedence[13,26]
+                              -99994                          -1 
+   157 precedence[14,26]
+                              -99988                          -1 
+   158 precedence[15,26]
+                                  -8                          -1 
+   159 precedence[16,26]
+                              -99986                          -1 
+   160 precedence[17,22]
+                                  -4                          -1 
+   161 precedence[17,26]
+                                  -6                          -1 
+   162 precedence[18,26]
+                                  -3                          -1 
+   163 precedence[19,26]
+                                 -11                          -1 
+   164 precedence[20,26]
+                              -99993                          -1 
+   165 precedence[21,26]
+                                  -7                          -1 
+   166 precedence[22,26]
+                                  -2                          -1 
+   167 precedence[23,26]
+                                  -1                          -1 
+   168 precedence[24,26]
+                                  -5                          -1 
+   169 precedence[25,26]
+                                  -4                          -1 
+   170 visit_order[0,1]
+                                  -3                       99998 
+   171 visit_order[0,2]
+                                 -13                       99998 
+   172 visit_order[0,3]
+                               99998                       99998 
+   173 visit_order[0,4]
+                                  -7                       99998 
+   174 visit_order[0,5]
+                              -99988                       99998 
+   175 visit_order[0,6]
+                                 -11                       99998 
+   176 visit_order[0,7]
+                                  -9                       99998 
+   177 visit_order[0,8]
+                                  -6                       99998 
+   178 visit_order[0,9]
+                                  -2                       99998 
+   179 visit_order[0,10]
+                              -99986                       99998 
+   180 visit_order[0,11]
+                                  -8                       99998 
+   181 visit_order[0,12]
+                              -99989                       99998 
+   182 visit_order[0,13]
+                                  -4                       99998 
+   183 visit_order[0,14]
+                                 -10                       99998 
+   184 visit_order[0,15]
+                              -99990                       99998 
+   185 visit_order[0,16]
+                                 -12                       99998 
+   186 visit_order[0,17]
+                              -99992                       99998 
+   187 visit_order[0,18]
+                              -99995                       99998 
+   188 visit_order[0,19]
+                              -99987                       99998 
+   189 visit_order[0,20]
+                                  -5                       99998 
+   190 visit_order[0,21]
+                              -99991                       99998 
+   191 visit_order[0,22]
+                              -99996                       99998 
+   192 visit_order[0,23]
+                              -99997                       99998 
+   193 visit_order[0,24]
+                              -99993                       99998 
+   194 visit_order[0,25]
+                              -99994                       99998 
+   195 visit_order[0,26]
+                              -99998                       99998 
+   196 visit_order[1,0]
+                                   3                       99998 
+   197 visit_order[1,2]
+                                 -10                       99998 
+   198 visit_order[1,3]
+                                   2                       99998 
+   199 visit_order[1,4]
+                                  -4                       99998 
+   200 visit_order[1,5]
+                              -99985                       99998 
+   201 visit_order[1,6]
+                                  -8                       99998 
+   202 visit_order[1,7]
+                                  -6                       99998 
+   203 visit_order[1,8]
+                                  -3                       99998 
+   204 visit_order[1,9]
+                                   1                       99998 
+   205 visit_order[1,10]
+                              -99983                       99998 
+   206 visit_order[1,11]
+                                  -5                       99998 
+   207 visit_order[1,12]
+                              -99986                       99998 
+   208 visit_order[1,13]
+                               99998                       99998 
+   209 visit_order[1,14]
+                                  -7                       99998 
+   210 visit_order[1,15]
+                              -99987                       99998 
+   211 visit_order[1,16]
+                                  -9                       99998 
+   212 visit_order[1,17]
+                              -99989                       99998 
+   213 visit_order[1,18]
+                              -99992                       99998 
+   214 visit_order[1,19]
+                              -99984                       99998 
+   215 visit_order[1,20]
+                                  -2                       99998 
+   216 visit_order[1,21]
+                              -99988                       99998 
+   217 visit_order[1,22]
+                              -99993                       99998 
+   218 visit_order[1,23]
+                              -99994                       99998 
+   219 visit_order[1,24]
+                              -99990                       99998 
+   220 visit_order[1,25]
+                              -99991                       99998 
+   221 visit_order[1,26]
+                              -99995                       99998 
+   222 visit_order[2,0]
+                                  13                       99998 
+   223 visit_order[2,1]
+                                  10                       99998 
+   224 visit_order[2,3]
+                                  12                       99998 
+   225 visit_order[2,4]
+                                   6                       99998 
+   226 visit_order[2,5]
+                              -99975                       99998 
+   227 visit_order[2,6]
+                                   2                       99998 
+   228 visit_order[2,7]
+                                   4                       99998 
+   229 visit_order[2,8]
+                                   7                       99998 
+   230 visit_order[2,9]
+                                  11                       99998 
+   231 visit_order[2,10]
+                                  26                       99998 
+   232 visit_order[2,11]
+                                   5                       99998 
+   233 visit_order[2,12]
+                              -99976                       99998 
+   234 visit_order[2,13]
+                                   9                       99998 
+   235 visit_order[2,14]
+                                   3                       99998 
+   236 visit_order[2,15]
+                              -99977                       99998 
+   237 visit_order[2,16]
+                                   1                       99998 
+   238 visit_order[2,17]
+                              -99979                       99998 
+   239 visit_order[2,18]
+                              -99982                       99998 
+   240 visit_order[2,19]
+                              -99974                       99998 
+   241 visit_order[2,20]
+                                   8                       99998 
+   242 visit_order[2,21]
+                              -99978                       99998 
+   243 visit_order[2,22]
+                              -99983                       99998 
+   244 visit_order[2,23]
+                              -99984                       99998 
+   245 visit_order[2,24]
+                              -99980                       99998 
+   246 visit_order[2,25]
+                              -99981                       99998 
+   247 visit_order[2,26]
+                              -99985                       99998 
+   248 visit_order[3,0]
+                                   1                       99998 
+   249 visit_order[3,1]
+                                  -2                       99998 
+   250 visit_order[3,2]
+                                 -12                       99998 
+   251 visit_order[3,4]
+                                  -6                       99998 
+   252 visit_order[3,5]
+                              -99987                       99998 
+   253 visit_order[3,6]
+                                 -10                       99998 
+   254 visit_order[3,7]
+                                  -8                       99998 
+   255 visit_order[3,8]
+                                  -5                       99998 
+   256 visit_order[3,9]
+                               99998                       99998 
+   257 visit_order[3,10]
+                              -99985                       99998 
+   258 visit_order[3,11]
+                                  -7                       99998 
+   259 visit_order[3,12]
+                              -99988                       99998 
+   260 visit_order[3,13]
+                                  -3                       99998 
+   261 visit_order[3,14]
+                                  -9                       99998 
+   262 visit_order[3,15]
+                              -99989                       99998 
+   263 visit_order[3,16]
+                                 -11                       99998 
+   264 visit_order[3,17]
+                              -99991                       99998 
+   265 visit_order[3,18]
+                              -99994                       99998 
+   266 visit_order[3,19]
+                              -99986                       99998 
+   267 visit_order[3,20]
+                                  -4                       99998 
+   268 visit_order[3,21]
+                              -99990                       99998 
+   269 visit_order[3,22]
+                              -99995                       99998 
+   270 visit_order[3,23]
+                              -99996                       99998 
+   271 visit_order[3,24]
+                              -99992                       99998 
+   272 visit_order[3,25]
+                              -99993                       99998 
+   273 visit_order[3,26]
+                              -99997                       99998 
+   274 visit_order[4,0]
+                                   7                       99998 
+   275 visit_order[4,1]
+                                   4                       99998 
+   276 visit_order[4,2]
+                                  -6                       99998 
+   277 visit_order[4,3]
+                                   6                       99998 
+   278 visit_order[4,5]
+                              -99981                       99998 
+   279 visit_order[4,6]
+                                  -4                       99998 
+   280 visit_order[4,7]
+                                  -2                       99998 
+   281 visit_order[4,8]
+                                   1                       99998 
+   282 visit_order[4,9]
+                                   5                       99998 
+   283 visit_order[4,10]
+                              -99979                       99998 
+   284 visit_order[4,11]
+                               99998                       99998 
+   285 visit_order[4,12]
+                              -99982                       99998 
+   286 visit_order[4,13]
+                                   3                       99998 
+   287 visit_order[4,14]
+                                  -3                       99998 
+   288 visit_order[4,15]
+                              -99983                       99998 
+   289 visit_order[4,16]
+                                  -5                       99998 
+   290 visit_order[4,17]
+                              -99985                       99998 
+   291 visit_order[4,18]
+                              -99988                       99998 
+   292 visit_order[4,19]
+                              -99980                       99998 
+   293 visit_order[4,20]
+                                   2                       99998 
+   294 visit_order[4,21]
+                              -99984                       99998 
+   295 visit_order[4,22]
+                              -99989                       99998 
+   296 visit_order[4,23]
+                              -99990                       99998 
+   297 visit_order[4,24]
+                              -99986                       99998 
+   298 visit_order[4,25]
+                              -99987                       99998 
+   299 visit_order[4,26]
+                              -99991                       99998 
+   300 visit_order[5,0]
+                               99988                       99998 
+   301 visit_order[5,1]
+                               99985                       99998 
+   302 visit_order[5,2]
+                               99975                       99998 
+   303 visit_order[5,3]
+                               99987                       99998 
+   304 visit_order[5,4]
+                               99981                       99998 
+   305 visit_order[5,6]
+                               99977                       99998 
+   306 visit_order[5,7]
+                               99979                       99998 
+   307 visit_order[5,8]
+                               99982                       99998 
+   308 visit_order[5,9]
+                               99986                       99998 
+   309 visit_order[5,10]
+                                   2                       99998 
+   310 visit_order[5,11]
+                               99980                       99998 
+   311 visit_order[5,12]
+                               99998                       99998 
+   312 visit_order[5,13]
+                               99984                       99998 
+   313 visit_order[5,14]
+                               99978                       99998 
+   314 visit_order[5,15]
+                                  -2                       99998 
+   315 visit_order[5,16]
+                               99976                       99998 
+   316 visit_order[5,17]
+                                  -4                       99998 
+   317 visit_order[5,18]
+                                  -7                       99998 
+   318 visit_order[5,19]
+                                   1                       99998 
+   319 visit_order[5,20]
+                               99983                       99998 
+   320 visit_order[5,21]
+                                  -3                       99998 
+   321 visit_order[5,22]
+                                  -8                       99998 
+   322 visit_order[5,23]
+                                  -9                       99998 
+   323 visit_order[5,24]
+                                  -5                       99998 
+   324 visit_order[5,25]
+                                  -6                       99998 
+   325 visit_order[5,26]
+                                 -10                       99998 
+   326 visit_order[6,0]
+                                  11                       99998 
+   327 visit_order[6,1]
+                                   8                       99998 
+   328 visit_order[6,2]
+                                  -2                       99998 
+   329 visit_order[6,3]
+                                  10                       99998 
+   330 visit_order[6,4]
+                                   4                       99998 
+   331 visit_order[6,5]
+                              -99977                       99998 
+   332 visit_order[6,7]
+                                   2                       99998 
+   333 visit_order[6,8]
+                                   5                       99998 
+   334 visit_order[6,9]
+                                   9                       99998 
+   335 visit_order[6,10]
+                              -99975                       99998 
+   336 visit_order[6,11]
+                                   3                       99998 
+   337 visit_order[6,12]
+                              -99978                       99998 
+   338 visit_order[6,13]
+                                   7                       99998 
+   339 visit_order[6,14]
+                                   1                       99998 
+   340 visit_order[6,15]
+                              -99979                       99998 
+   341 visit_order[6,16]
+                               99998                       99998 
+   342 visit_order[6,17]
+                              -99981                       99998 
+   343 visit_order[6,18]
+                              -99984                       99998 
+   344 visit_order[6,19]
+                              -99976                       99998 
+   345 visit_order[6,20]
+                                   6                       99998 
+   346 visit_order[6,21]
+                              -99980                       99998 
+   347 visit_order[6,22]
+                              -99985                       99998 
+   348 visit_order[6,23]
+                              -99986                       99998 
+   349 visit_order[6,24]
+                              -99982                       99998 
+   350 visit_order[6,25]
+                              -99983                       99998 
+   351 visit_order[6,26]
+                              -99987                       99998 
+   352 visit_order[7,0]
+                                   9                       99998 
+   353 visit_order[7,1]
+                                   6                       99998 
+   354 visit_order[7,2]
+                                  -4                       99998 
+   355 visit_order[7,3]
+                                   8                       99998 
+   356 visit_order[7,4]
+                                   2                       99998 
+   357 visit_order[7,5]
+                              -99979                       99998 
+   358 visit_order[7,6]
+                                  -2                       99998 
+   359 visit_order[7,8]
+                                   3                       99998 
+   360 visit_order[7,9]
+                                   7                       99998 
+   361 visit_order[7,10]
+                              -99977                       99998 
+   362 visit_order[7,11]
+                                   1                       99998 
+   363 visit_order[7,12]
+                              -99980                       99998 
+   364 visit_order[7,13]
+                                   5                       99998 
+   365 visit_order[7,14]
+                               99998                       99998 
+   366 visit_order[7,15]
+                              -99981                       99998 
+   367 visit_order[7,16]
+                                  -3                       99998 
+   368 visit_order[7,17]
+                              -99983                       99998 
+   369 visit_order[7,18]
+                              -99986                       99998 
+   370 visit_order[7,19]
+                              -99978                       99998 
+   371 visit_order[7,20]
+                                   4                       99998 
+   372 visit_order[7,21]
+                              -99982                       99998 
+   373 visit_order[7,22]
+                              -99987                       99998 
+   374 visit_order[7,23]
+                              -99988                       99998 
+   375 visit_order[7,24]
+                              -99984                       99998 
+   376 visit_order[7,25]
+                              -99985                       99998 
+   377 visit_order[7,26]
+                              -99989                       99998 
+   378 visit_order[8,0]
+                                   6                       99998 
+   379 visit_order[8,1]
+                                   3                       99998 
+   380 visit_order[8,2]
+                                  -7                       99998 
+   381 visit_order[8,3]
+                                   5                       99998 
+   382 visit_order[8,4]
+                               99998                       99998 
+   383 visit_order[8,5]
+                              -99982                       99998 
+   384 visit_order[8,6]
+                                  -5                       99998 
+   385 visit_order[8,7]
+                                  -3                       99998 
+   386 visit_order[8,9]
+                                   4                       99998 
+   387 visit_order[8,10]
+                              -99980                       99998 
+   388 visit_order[8,11]
+                                  -2                       99998 
+   389 visit_order[8,12]
+                              -99983                       99998 
+   390 visit_order[8,13]
+                                   2                       99998 
+   391 visit_order[8,14]
+                                  -4                       99998 
+   392 visit_order[8,15]
+                              -99984                       99998 
+   393 visit_order[8,16]
+                                  -6                       99998 
+   394 visit_order[8,17]
+                              -99986                       99998 
+   395 visit_order[8,18]
+                              -99989                       99998 
+   396 visit_order[8,19]
+                              -99981                       99998 
+   397 visit_order[8,20]
+                                   1                       99998 
+   398 visit_order[8,21]
+                              -99985                       99998 
+   399 visit_order[8,22]
+                              -99990                       99998 
+   400 visit_order[8,23]
+                              -99991                       99998 
+   401 visit_order[8,24]
+                              -99987                       99998 
+   402 visit_order[8,25]
+                              -99988                       99998 
+   403 visit_order[8,26]
+                              -99992                       99998 
+   404 visit_order[9,0]
+                                   2                       99998 
+   405 visit_order[9,1]
+                               99998                       99998 
+   406 visit_order[9,2]
+                                 -11                       99998 
+   407 visit_order[9,3]
+                                   1                       99998 
+   408 visit_order[9,4]
+                                  -5                       99998 
+   409 visit_order[9,5]
+                              -99986                       99998 
+   410 visit_order[9,6]
+                                  -9                       99998 
+   411 visit_order[9,7]
+                                  -7                       99998 
+   412 visit_order[9,8]
+                                  -4                       99998 
+   413 visit_order[9,10]
+                              -99984                       99998 
+   414 visit_order[9,11]
+                                  -6                       99998 
+   415 visit_order[9,12]
+                              -99987                       99998 
+   416 visit_order[9,13]
+                                  -2                       99998 
+   417 visit_order[9,14]
+                                  -8                       99998 
+   418 visit_order[9,15]
+                              -99988                       99998 
+   419 visit_order[9,16]
+                                 -10                       99998 
+   420 visit_order[9,17]
+                              -99990                       99998 
+   421 visit_order[9,18]
+                              -99993                       99998 
+   422 visit_order[9,19]
+                              -99985                       99998 
+   423 visit_order[9,20]
+                                  -3                       99998 
+   424 visit_order[9,21]
+                              -99989                       99998 
+   425 visit_order[9,22]
+                              -99994                       99998 
+   426 visit_order[9,23]
+                              -99995                       99998 
+   427 visit_order[9,24]
+                              -99991                       99998 
+   428 visit_order[9,25]
+                              -99992                       99998 
+   429 visit_order[9,26]
+                              -99996                       99998 
+   430 visit_order[10,0]
+                               99986                       99998 
+   431 visit_order[10,1]
+                               99983                       99998 
+   432 visit_order[10,2]
+                               99973                       99998 
+   433 visit_order[10,3]
+                               99985                       99998 
+   434 visit_order[10,4]
+                               99979                       99998 
+   435 visit_order[10,5]
+                                  -2                       99998 
+   436 visit_order[10,6]
+                               99975                       99998 
+   437 visit_order[10,7]
+                               99977                       99998 
+   438 visit_order[10,8]
+                               99980                       99998 
+   439 visit_order[10,9]
+                               99984                       99998 
+   440 visit_order[10,11]
+                               99978                       99998 
+   441 visit_order[10,12]
+                                  -3                       99998 
+   442 visit_order[10,13]
+                               99982                       99998 
+   443 visit_order[10,14]
+                               99976                       99998 
+   444 visit_order[10,15]
+                                  -4                       99998 
+   445 visit_order[10,16]
+                               99974                       99998 
+   446 visit_order[10,17]
+                                  -6                       99998 
+   447 visit_order[10,18]
+                                  -9                       99998 
+   448 visit_order[10,19]
+                               99998                       99998 
+   449 visit_order[10,20]
+                               99981                       99998 
+   450 visit_order[10,21]
+                                  -5                       99998 
+   451 visit_order[10,22]
+                                 -10                       99998 
+   452 visit_order[10,23]
+                                 -11                       99998 
+   453 visit_order[10,24]
+                                  -7                       99998 
+   454 visit_order[10,25]
+                                  -8                       99998 
+   455 visit_order[10,26]
+                                 -12                       99998 
+   456 visit_order[11,0]
+                                   8                       99998 
+   457 visit_order[11,1]
+                                   5                       99998 
+   458 visit_order[11,2]
+                                  -5                       99998 
+   459 visit_order[11,3]
+                                   7                       99998 
+   460 visit_order[11,4]
+                                   1                       99998 
+   461 visit_order[11,5]
+                              -99980                       99998 
+   462 visit_order[11,6]
+                                  -3                       99998 
+   463 visit_order[11,7]
+                               99998                       99998 
+   464 visit_order[11,8]
+                                   2                       99998 
+   465 visit_order[11,9]
+                                   6                       99998 
+   466 visit_order[11,10]
+                              -99978                       99998 
+   467 visit_order[11,12]
+                              -99981                       99998 
+   468 visit_order[11,13]
+                                   4                       99998 
+   469 visit_order[11,14]
+                                  -2                       99998 
+   470 visit_order[11,15]
+                              -99982                       99998 
+   471 visit_order[11,16]
+                                  -4                       99998 
+   472 visit_order[11,17]
+                              -99984                       99998 
+   473 visit_order[11,18]
+                              -99987                       99998 
+   474 visit_order[11,19]
+                              -99979                       99998 
+   475 visit_order[11,20]
+                                   3                       99998 
+   476 visit_order[11,21]
+                              -99983                       99998 
+   477 visit_order[11,22]
+                              -99988                       99998 
+   478 visit_order[11,23]
+                              -99989                       99998 
+   479 visit_order[11,24]
+                              -99985                       99998 
+   480 visit_order[11,25]
+                              -99986                       99998 
+   481 visit_order[11,26]
+                              -99990                       99998 
+   482 visit_order[12,0]
+                               99989                       99998 
+   483 visit_order[12,1]
+                               99986                       99998 
+   484 visit_order[12,2]
+                               99976                       99998 
+   485 visit_order[12,3]
+                               99988                       99998 
+   486 visit_order[12,4]
+                               99982                       99998 
+   487 visit_order[12,5]
+                                   1                       99998 
+   488 visit_order[12,6]
+                               99978                       99998 
+   489 visit_order[12,7]
+                               99980                       99998 
+   490 visit_order[12,8]
+                               99983                       99998 
+   491 visit_order[12,9]
+                               99987                       99998 
+   492 visit_order[12,10]
+                                   3                       99998 
+   493 visit_order[12,11]
+                               99981                       99998 
+   494 visit_order[12,13]
+                               99985                       99998 
+   495 visit_order[12,14]
+                               99979                       99998 
+   496 visit_order[12,15]
+                               99998                       99998 
+   497 visit_order[12,16]
+                               99977                       99998 
+   498 visit_order[12,17]
+                                  -3                       99998 
+   499 visit_order[12,18]
+                                  -6                       99998 
+   500 visit_order[12,19]
+                                   2                       99998 
+   501 visit_order[12,20]
+                               99984                       99998 
+   502 visit_order[12,21]
+                                  -2                       99998 
+   503 visit_order[12,22]
+                                  -7                       99998 
+   504 visit_order[12,23]
+                                  -8                       99998 
+   505 visit_order[12,24]
+                                  -4                       99998 
+   506 visit_order[12,25]
+                                  -5                       99998 
+   507 visit_order[12,26]
+                                  -9                       99998 
+   508 visit_order[13,0]
+                                   4                       99998 
+   509 visit_order[13,1]
+                                   1                       99998 
+   510 visit_order[13,2]
+                                  -9                       99998 
+   511 visit_order[13,3]
+                                   3                       99998 
+   512 visit_order[13,4]
+                                  -3                       99998 
+   513 visit_order[13,5]
+                              -99984                       99998 
+   514 visit_order[13,6]
+                                  -7                       99998 
+   515 visit_order[13,7]
+                                  -5                       99998 
+   516 visit_order[13,8]
+                                  -2                       99998 
+   517 visit_order[13,9]
+                                   2                       99998 
+   518 visit_order[13,10]
+                              -99982                       99998 
+   519 visit_order[13,11]
+                                  -4                       99998 
+   520 visit_order[13,12]
+                              -99985                       99998 
+   521 visit_order[13,14]
+                                  -6                       99998 
+   522 visit_order[13,15]
+                              -99986                       99998 
+   523 visit_order[13,16]
+                                  -8                       99998 
+   524 visit_order[13,17]
+                              -99988                       99998 
+   525 visit_order[13,18]
+                              -99991                       99998 
+   526 visit_order[13,19]
+                              -99983                       99998 
+   527 visit_order[13,20]
+                               99998                       99998 
+   528 visit_order[13,21]
+                              -99987                       99998 
+   529 visit_order[13,22]
+                              -99992                       99998 
+   530 visit_order[13,23]
+                              -99993                       99998 
+   531 visit_order[13,24]
+                              -99989                       99998 
+   532 visit_order[13,25]
+                              -99990                       99998 
+   533 visit_order[13,26]
+                              -99994                       99998 
+   534 visit_order[14,0]
+                                  10                       99998 
+   535 visit_order[14,1]
+                                   7                       99998 
+   536 visit_order[14,2]
+                                  -3                       99998 
+   537 visit_order[14,3]
+                                   9                       99998 
+   538 visit_order[14,4]
+                                   3                       99998 
+   539 visit_order[14,5]
+                              -99978                       99998 
+   540 visit_order[14,6]
+                               99998                       99998 
+   541 visit_order[14,7]
+                                   1                       99998 
+   542 visit_order[14,8]
+                                   4                       99998 
+   543 visit_order[14,9]
+                                   8                       99998 
+   544 visit_order[14,10]
+                              -99976                       99998 
+   545 visit_order[14,11]
+                                   2                       99998 
+   546 visit_order[14,12]
+                              -99979                       99998 
+   547 visit_order[14,13]
+                                   6                       99998 
+   548 visit_order[14,15]
+                              -99980                       99998 
+   549 visit_order[14,16]
+                                  -2                       99998 
+   550 visit_order[14,17]
+                              -99982                       99998 
+   551 visit_order[14,18]
+                              -99985                       99998 
+   552 visit_order[14,19]
+                              -99977                       99998 
+   553 visit_order[14,20]
+                                   5                       99998 
+   554 visit_order[14,21]
+                              -99981                       99998 
+   555 visit_order[14,22]
+                              -99986                       99998 
+   556 visit_order[14,23]
+                              -99987                       99998 
+   557 visit_order[14,24]
+                              -99983                       99998 
+   558 visit_order[14,25]
+                              -99984                       99998 
+   559 visit_order[14,26]
+                              -99988                       99998 
+   560 visit_order[15,0]
+                               99990                       99998 
+   561 visit_order[15,1]
+                               99987                       99998 
+   562 visit_order[15,2]
+                               99977                       99998 
+   563 visit_order[15,3]
+                               99989                       99998 
+   564 visit_order[15,4]
+                               99983                       99998 
+   565 visit_order[15,5]
+                                   2                       99998 
+   566 visit_order[15,6]
+                               99979                       99998 
+   567 visit_order[15,7]
+                               99981                       99998 
+   568 visit_order[15,8]
+                               99984                       99998 
+   569 visit_order[15,9]
+                               99988                       99998 
+   570 visit_order[15,10]
+                                   4                       99998 
+   571 visit_order[15,11]
+                               99982                       99998 
+   572 visit_order[15,12]
+                                   1                       99998 
+   573 visit_order[15,13]
+                               99986                       99998 
+   574 visit_order[15,14]
+                               99980                       99998 
+   575 visit_order[15,16]
+                               99978                       99998 
+   576 visit_order[15,17]
+                                  -2                       99998 
+   577 visit_order[15,18]
+                                  -5                       99998 
+   578 visit_order[15,19]
+                                   3                       99998 
+   579 visit_order[15,20]
+                               99985                       99998 
+   580 visit_order[15,21]
+                               99998                       99998 
+   581 visit_order[15,22]
+                                  -6                       99998 
+   582 visit_order[15,23]
+                                  -7                       99998 
+   583 visit_order[15,24]
+                                  -3                       99998 
+   584 visit_order[15,25]
+                                  -4                       99998 
+   585 visit_order[15,26]
+                                  -8                       99998 
+   586 visit_order[16,0]
+                                  12                       99998 
+   587 visit_order[16,1]
+                                   9                       99998 
+   588 visit_order[16,2]
+                               99998                       99998 
+   589 visit_order[16,3]
+                                  11                       99998 
+   590 visit_order[16,4]
+                                   5                       99998 
+   591 visit_order[16,5]
+                              -99976                       99998 
+   592 visit_order[16,6]
+                                   1                       99998 
+   593 visit_order[16,7]
+                                   3                       99998 
+   594 visit_order[16,8]
+                                   6                       99998 
+   595 visit_order[16,9]
+                                  10                       99998 
+   596 visit_order[16,10]
+                              -99974                       99998 
+   597 visit_order[16,11]
+                                   4                       99998 
+   598 visit_order[16,12]
+                              -99977                       99998 
+   599 visit_order[16,13]
+                                   8                       99998 
+   600 visit_order[16,14]
+                                   2                       99998 
+   601 visit_order[16,15]
+                              -99978                       99998 
+   602 visit_order[16,17]
+                              -99980                       99998 
+   603 visit_order[16,18]
+                              -99983                       99998 
+   604 visit_order[16,19]
+                              -99975                       99998 
+   605 visit_order[16,20]
+                                   7                       99998 
+   606 visit_order[16,21]
+                              -99979                       99998 
+   607 visit_order[16,22]
+                              -99984                       99998 
+   608 visit_order[16,23]
+                              -99985                       99998 
+   609 visit_order[16,24]
+                              -99981                       99998 
+   610 visit_order[16,25]
+                              -99982                       99998 
+   611 visit_order[16,26]
+                              -99986                       99998 
+   612 visit_order[17,0]
+                               99992                       99998 
+   613 visit_order[17,1]
+                               99989                       99998 
+   614 visit_order[17,2]
+                               99979                       99998 
+   615 visit_order[17,3]
+                               99991                       99998 
+   616 visit_order[17,4]
+                               99985                       99998 
+   617 visit_order[17,5]
+                                   4                       99998 
+   618 visit_order[17,6]
+                               99981                       99998 
+   619 visit_order[17,7]
+                               99983                       99998 
+   620 visit_order[17,8]
+                               99986                       99998 
+   621 visit_order[17,9]
+                               99990                       99998 
+   622 visit_order[17,10]
+                                   6                       99998 
+   623 visit_order[17,11]
+                               99984                       99998 
+   624 visit_order[17,12]
+                                   3                       99998 
+   625 visit_order[17,13]
+                               99988                       99998 
+   626 visit_order[17,14]
+                               99982                       99998 
+   627 visit_order[17,15]
+                                   2                       99998 
+   628 visit_order[17,16]
+                               99980                       99998 
+   629 visit_order[17,18]
+                                  -3                       99998 
+   630 visit_order[17,19]
+                                   5                       99998 
+   631 visit_order[17,20]
+                               99987                       99998 
+   632 visit_order[17,21]
+                                   1                       99998 
+   633 visit_order[17,22]
+                                  -4                       99998 
+   634 visit_order[17,23]
+                                  -5                       99998 
+   635 visit_order[17,24]
+                               99998                       99998 
+   636 visit_order[17,25]
+                                  -2                       99998 
+   637 visit_order[17,26]
+                                  -6                       99998 
+   638 visit_order[18,0]
+                               99995                       99998 
+   639 visit_order[18,1]
+                               99992                       99998 
+   640 visit_order[18,2]
+                               99982                       99998 
+   641 visit_order[18,3]
+                               99994                       99998 
+   642 visit_order[18,4]
+                               99988                       99998 
+   643 visit_order[18,5]
+                                   7                       99998 
+   644 visit_order[18,6]
+                               99984                       99998 
+   645 visit_order[18,7]
+                               99986                       99998 
+   646 visit_order[18,8]
+                               99989                       99998 
+   647 visit_order[18,9]
+                               99993                       99998 
+   648 visit_order[18,10]
+                                   9                       99998 
+   649 visit_order[18,11]
+                               99987                       99998 
+   650 visit_order[18,12]
+                                   6                       99998 
+   651 visit_order[18,13]
+                               99991                       99998 
+   652 visit_order[18,14]
+                               99985                       99998 
+   653 visit_order[18,15]
+                                   5                       99998 
+   654 visit_order[18,16]
+                               99983                       99998 
+   655 visit_order[18,17]
+                                   3                       99998 
+   656 visit_order[18,19]
+                                   8                       99998 
+   657 visit_order[18,20]
+                               99990                       99998 
+   658 visit_order[18,21]
+                                   4                       99998 
+   659 visit_order[18,22]
+                               99998                       99998 
+   660 visit_order[18,23]
+                                  -2                       99998 
+   661 visit_order[18,24]
+                                   2                       99998 
+   662 visit_order[18,25]
+                                   1                       99998 
+   663 visit_order[18,26]
+                                  -3                       99998 
+   664 visit_order[19,0]
+                               99987                       99998 
+   665 visit_order[19,1]
+                               99984                       99998 
+   666 visit_order[19,2]
+                               99974                       99998 
+   667 visit_order[19,3]
+                               99986                       99998 
+   668 visit_order[19,4]
+                               99980                       99998 
+   669 visit_order[19,5]
+                               99998                       99998 
+   670 visit_order[19,6]
+                               99976                       99998 
+   671 visit_order[19,7]
+                               99978                       99998 
+   672 visit_order[19,8]
+                               99981                       99998 
+   673 visit_order[19,9]
+                               99985                       99998 
+   674 visit_order[19,10]
+                                   1                       99998 
+   675 visit_order[19,11]
+                               99979                       99998 
+   676 visit_order[19,12]
+                                  -2                       99998 
+   677 visit_order[19,13]
+                               99983                       99998 
+   678 visit_order[19,14]
+                               99977                       99998 
+   679 visit_order[19,15]
+                                  -3                       99998 
+   680 visit_order[19,16]
+                               99975                       99998 
+   681 visit_order[19,17]
+                                  -5                       99998 
+   682 visit_order[19,18]
+                                  -8                       99998 
+   683 visit_order[19,20]
+                               99982                       99998 
+   684 visit_order[19,21]
+                                  -4                       99998 
+   685 visit_order[19,22]
+                                  -9                       99998 
+   686 visit_order[19,23]
+                                 -10                       99998 
+   687 visit_order[19,24]
+                                  -6                       99998 
+   688 visit_order[19,25]
+                                  -7                       99998 
+   689 visit_order[19,26]
+                                 -11                       99998 
+   690 visit_order[20,0]
+                                   5                       99998 
+   691 visit_order[20,1]
+                                   2                       99998 
+   692 visit_order[20,2]
+                                  -8                       99998 
+   693 visit_order[20,3]
+                                   4                       99998 
+   694 visit_order[20,4]
+                                  -2                       99998 
+   695 visit_order[20,5]
+                              -99983                       99998 
+   696 visit_order[20,6]
+                                  -6                       99998 
+   697 visit_order[20,7]
+                                  -4                       99998 
+   698 visit_order[20,8]
+                               99998                       99998 
+   699 visit_order[20,9]
+                                   3                       99998 
+   700 visit_order[20,10]
+                              -99981                       99998 
+   701 visit_order[20,11]
+                                  -3                       99998 
+   702 visit_order[20,12]
+                              -99984                       99998 
+   703 visit_order[20,13]
+                                   1                       99998 
+   704 visit_order[20,14]
+                                  -5                       99998 
+   705 visit_order[20,15]
+                              -99985                       99998 
+   706 visit_order[20,16]
+                                  -7                       99998 
+   707 visit_order[20,17]
+                              -99987                       99998 
+   708 visit_order[20,18]
+                              -99990                       99998 
+   709 visit_order[20,19]
+                              -99982                       99998 
+   710 visit_order[20,21]
+                              -99986                       99998 
+   711 visit_order[20,22]
+                              -99991                       99998 
+   712 visit_order[20,23]
+                              -99992                       99998 
+   713 visit_order[20,24]
+                              -99988                       99998 
+   714 visit_order[20,25]
+                              -99989                       99998 
+   715 visit_order[20,26]
+                              -99993                       99998 
+   716 visit_order[21,0]
+                               99991                       99998 
+   717 visit_order[21,1]
+                               99988                       99998 
+   718 visit_order[21,2]
+                               99978                       99998 
+   719 visit_order[21,3]
+                               99990                       99998 
+   720 visit_order[21,4]
+                               99984                       99998 
+   721 visit_order[21,5]
+                                   3                       99998 
+   722 visit_order[21,6]
+                               99980                       99998 
+   723 visit_order[21,7]
+                               99982                       99998 
+   724 visit_order[21,8]
+                               99985                       99998 
+   725 visit_order[21,9]
+                               99989                       99998 
+   726 visit_order[21,10]
+                                   5                       99998 
+   727 visit_order[21,11]
+                               99983                       99998 
+   728 visit_order[21,12]
+                                   2                       99998 
+   729 visit_order[21,13]
+                               99987                       99998 
+   730 visit_order[21,14]
+                               99981                       99998 
+   731 visit_order[21,15]
+                                   1                       99998 
+   732 visit_order[21,16]
+                               99979                       99998 
+   733 visit_order[21,17]
+                               99998                       99998 
+   734 visit_order[21,18]
+                                  -4                       99998 
+   735 visit_order[21,19]
+                                   4                       99998 
+   736 visit_order[21,20]
+                               99986                       99998 
+   737 visit_order[21,22]
+                                  -5                       99998 
+   738 visit_order[21,23]
+                                  -6                       99998 
+   739 visit_order[21,24]
+                                  -2                       99998 
+   740 visit_order[21,25]
+                                  -3                       99998 
+   741 visit_order[21,26]
+                                  -7                       99998 
+   742 visit_order[22,0]
+                               99996                       99998 
+   743 visit_order[22,1]
+                               99993                       99998 
+   744 visit_order[22,2]
+                               99983                       99998 
+   745 visit_order[22,3]
+                               99995                       99998 
+   746 visit_order[22,4]
+                               99989                       99998 
+   747 visit_order[22,5]
+                                   8                       99998 
+   748 visit_order[22,6]
+                               99985                       99998 
+   749 visit_order[22,7]
+                               99987                       99998 
+   750 visit_order[22,8]
+                               99990                       99998 
+   751 visit_order[22,9]
+                               99994                       99998 
+   752 visit_order[22,10]
+                                  10                       99998 
+   753 visit_order[22,11]
+                               99988                       99998 
+   754 visit_order[22,12]
+                                   7                       99998 
+   755 visit_order[22,13]
+                               99992                       99998 
+   756 visit_order[22,14]
+                               99986                       99998 
+   757 visit_order[22,15]
+                                   6                       99998 
+   758 visit_order[22,16]
+                               99984                       99998 
+   759 visit_order[22,17]
+                                   4                       99998 
+   760 visit_order[22,18]
+                                   1                       99998 
+   761 visit_order[22,19]
+                                   9                       99998 
+   762 visit_order[22,20]
+                               99991                       99998 
+   763 visit_order[22,21]
+                                   5                       99998 
+   764 visit_order[22,23]
+                               99998                       99998 
+   765 visit_order[22,24]
+                                   3                       99998 
+   766 visit_order[22,25]
+                                   2                       99998 
+   767 visit_order[22,26]
+                                  -2                       99998 
+   768 visit_order[23,0]
+                               99997                       99998 
+   769 visit_order[23,1]
+                               99994                       99998 
+   770 visit_order[23,2]
+                               99984                       99998 
+   771 visit_order[23,3]
+                               99996                       99998 
+   772 visit_order[23,4]
+                               99990                       99998 
+   773 visit_order[23,5]
+                                   9                       99998 
+   774 visit_order[23,6]
+                               99986                       99998 
+   775 visit_order[23,7]
+                               99988                       99998 
+   776 visit_order[23,8]
+                               99991                       99998 
+   777 visit_order[23,9]
+                               99995                       99998 
+   778 visit_order[23,10]
+                                  11                       99998 
+   779 visit_order[23,11]
+                               99989                       99998 
+   780 visit_order[23,12]
+                                   8                       99998 
+   781 visit_order[23,13]
+                               99993                       99998 
+   782 visit_order[23,14]
+                               99987                       99998 
+   783 visit_order[23,15]
+                                   7                       99998 
+   784 visit_order[23,16]
+                               99985                       99998 
+   785 visit_order[23,17]
+                                   5                       99998 
+   786 visit_order[23,18]
+                                   2                       99998 
+   787 visit_order[23,19]
+                                  10                       99998 
+   788 visit_order[23,20]
+                               99992                       99998 
+   789 visit_order[23,21]
+                                   6                       99998 
+   790 visit_order[23,22]
+                                   1                       99998 
+   791 visit_order[23,24]
+                                   4                       99998 
+   792 visit_order[23,25]
+                                   3                       99998 
+   793 visit_order[23,26]
+                               99998                       99998 
+   794 visit_order[24,0]
+                               99993                       99998 
+   795 visit_order[24,1]
+                               99990                       99998 
+   796 visit_order[24,2]
+                               99980                       99998 
+   797 visit_order[24,3]
+                               99992                       99998 
+   798 visit_order[24,4]
+                               99986                       99998 
+   799 visit_order[24,5]
+                                   5                       99998 
+   800 visit_order[24,6]
+                               99982                       99998 
+   801 visit_order[24,7]
+                               99984                       99998 
+   802 visit_order[24,8]
+                               99987                       99998 
+   803 visit_order[24,9]
+                               99991                       99998 
+   804 visit_order[24,10]
+                                   7                       99998 
+   805 visit_order[24,11]
+                               99985                       99998 
+   806 visit_order[24,12]
+                                   4                       99998 
+   807 visit_order[24,13]
+                               99989                       99998 
+   808 visit_order[24,14]
+                               99983                       99998 
+   809 visit_order[24,15]
+                                   3                       99998 
+   810 visit_order[24,16]
+                               99981                       99998 
+   811 visit_order[24,17]
+                                   1                       99998 
+   812 visit_order[24,18]
+                                  -2                       99998 
+   813 visit_order[24,19]
+                                   6                       99998 
+   814 visit_order[24,20]
+                               99988                       99998 
+   815 visit_order[24,21]
+                                   2                       99998 
+   816 visit_order[24,22]
+                                  -3                       99998 
+   817 visit_order[24,23]
+                                  -4                       99998 
+   818 visit_order[24,25]
+                               99998                       99998 
+   819 visit_order[24,26]
+                                  -5                       99998 
+   820 visit_order[25,0]
+                               99994                       99998 
+   821 visit_order[25,1]
+                               99991                       99998 
+   822 visit_order[25,2]
+                               99981                       99998 
+   823 visit_order[25,3]
+                               99993                       99998 
+   824 visit_order[25,4]
+                               99987                       99998 
+   825 visit_order[25,5]
+                                   6                       99998 
+   826 visit_order[25,6]
+                               99983                       99998 
+   827 visit_order[25,7]
+                               99985                       99998 
+   828 visit_order[25,8]
+                               99988                       99998 
+   829 visit_order[25,9]
+                               99992                       99998 
+   830 visit_order[25,10]
+                                   8                       99998 
+   831 visit_order[25,11]
+                               99986                       99998 
+   832 visit_order[25,12]
+                                   5                       99998 
+   833 visit_order[25,13]
+                               99990                       99998 
+   834 visit_order[25,14]
+                               99984                       99998 
+   835 visit_order[25,15]
+                                   4                       99998 
+   836 visit_order[25,16]
+                               99982                       99998 
+   837 visit_order[25,17]
+                                   2                       99998 
+   838 visit_order[25,18]
+                               99998                       99998 
+   839 visit_order[25,19]
+                                   7                       99998 
+   840 visit_order[25,20]
+                               99989                       99998 
+   841 visit_order[25,21]
+                                   3                       99998 
+   842 visit_order[25,22]
+                                  -2                       99998 
+   843 visit_order[25,23]
+                                  -3                       99998 
+   844 visit_order[25,24]
+                                   1                       99998 
+   845 visit_order[25,26]
+                                  -4                       99998 
+   846 visit_order[26,0]
+                               99998                       99998 
+   847 visit_order[26,1]
+                               99995                       99998 
+   848 visit_order[26,2]
+                               99985                       99998 
+   849 visit_order[26,3]
+                               99997                       99998 
+   850 visit_order[26,4]
+                               99991                       99998 
+   851 visit_order[26,5]
+                                  10                       99998 
+   852 visit_order[26,6]
+                               99987                       99998 
+   853 visit_order[26,7]
+                               99989                       99998 
+   854 visit_order[26,8]
+                               99992                       99998 
+   855 visit_order[26,9]
+                               99996                       99998 
+   856 visit_order[26,10]
+                                  12                       99998 
+   857 visit_order[26,11]
+                               99990                       99998 
+   858 visit_order[26,12]
+                                   9                       99998 
+   859 visit_order[26,13]
+                               99994                       99998 
+   860 visit_order[26,14]
+                               99988                       99998 
+   861 visit_order[26,15]
+                                   8                       99998 
+   862 visit_order[26,16]
+                               99986                       99998 
+   863 visit_order[26,17]
+                                   6                       99998 
+   864 visit_order[26,18]
+                                   3                       99998 
+   865 visit_order[26,19]
+                                  11                       99998 
+   866 visit_order[26,20]
+                               99993                       99998 
+   867 visit_order[26,21]
+                                   7                       99998 
+   868 visit_order[26,22]
+                                   2                       99998 
+   869 visit_order[26,23]
+                                   1                       99998 
+   870 visit_order[26,24]
+                                   5                       99998 
+   871 visit_order[26,25]
+                                   4                       99998 
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 x[0,1]       *              0             0             1 
+     2 x[0,2]       *              0             0             1 
+     3 x[0,3]       *              1             0             1 
+     4 x[0,4]       *              0             0             1 
+     5 x[0,5]       *              0             0             1 
+     6 x[0,6]       *              0             0             1 
+     7 x[0,7]       *              0             0             1 
+     8 x[0,8]       *              0             0             1 
+     9 x[0,9]       *              0             0             1 
+    10 x[0,10]      *              0             0             1 
+    11 x[0,11]      *              0             0             1 
+    12 x[0,12]      *              0             0             1 
+    13 x[0,13]      *              0             0             1 
+    14 x[0,14]      *              0             0             1 
+    15 x[0,15]      *              0             0             1 
+    16 x[0,16]      *              0             0             1 
+    17 x[0,17]      *              0             0             1 
+    18 x[0,18]      *              0             0             1 
+    19 x[0,19]      *              0             0             1 
+    20 x[0,20]      *              0             0             1 
+    21 x[0,21]      *              0             0             1 
+    22 x[0,22]      *              0             0             1 
+    23 x[0,23]      *              0             0             1 
+    24 x[0,24]      *              0             0             1 
+    25 x[0,25]      *              0             0             1 
+    26 x[0,26]      *              0             0             1 
+    27 x[1,0]       *              0             0             1 
+    28 x[1,2]       *              0             0             1 
+    29 x[1,3]       *              0             0             1 
+    30 x[1,4]       *              0             0             1 
+    31 x[1,5]       *              0             0             1 
+    32 x[1,6]       *              0             0             1 
+    33 x[1,7]       *              0             0             1 
+    34 x[1,8]       *              0             0             1 
+    35 x[1,9]       *              0             0             1 
+    36 x[1,10]      *              0             0             1 
+    37 x[1,11]      *              0             0             1 
+    38 x[1,12]      *              0             0             1 
+    39 x[1,13]      *              1             0             1 
+    40 x[1,14]      *              0             0             1 
+    41 x[1,15]      *              0             0             1 
+    42 x[1,16]      *              0             0             1 
+    43 x[1,17]      *              0             0             1 
+    44 x[1,18]      *              0             0             1 
+    45 x[1,19]      *              0             0             1 
+    46 x[1,20]      *              0             0             1 
+    47 x[1,21]      *              0             0             1 
+    48 x[1,22]      *              0             0             1 
+    49 x[1,23]      *              0             0             1 
+    50 x[1,24]      *              0             0             1 
+    51 x[1,25]      *              0             0             1 
+    52 x[1,26]      *              0             0             1 
+    53 x[2,0]       *              0             0             1 
+    54 x[2,1]       *              0             0             1 
+    55 x[2,3]       *              0             0             1 
+    56 x[2,4]       *              0             0             1 
+    57 x[2,5]       *              0             0             1 
+    58 x[2,6]       *              0             0             1 
+    59 x[2,7]       *              0             0             1 
+    60 x[2,8]       *              0             0             1 
+    61 x[2,9]       *              0             0             1 
+    62 x[2,10]      *              1             0             1 
+    63 x[2,11]      *              0             0             1 
+    64 x[2,12]      *              0             0             1 
+    65 x[2,13]      *              0             0             1 
+    66 x[2,14]      *              0             0             1 
+    67 x[2,15]      *              0             0             1 
+    68 x[2,16]      *              0             0             1 
+    69 x[2,17]      *              0             0             1 
+    70 x[2,18]      *              0             0             1 
+    71 x[2,19]      *              0             0             1 
+    72 x[2,20]      *              0             0             1 
+    73 x[2,21]      *              0             0             1 
+    74 x[2,22]      *              0             0             1 
+    75 x[2,23]      *              0             0             1 
+    76 x[2,24]      *              0             0             1 
+    77 x[2,25]      *              0             0             1 
+    78 x[2,26]      *              0             0             1 
+    79 x[3,0]       *              0             0             1 
+    80 x[3,1]       *              0             0             1 
+    81 x[3,2]       *              0             0             1 
+    82 x[3,4]       *              0             0             1 
+    83 x[3,5]       *              0             0             1 
+    84 x[3,6]       *              0             0             1 
+    85 x[3,7]       *              0             0             1 
+    86 x[3,8]       *              0             0             1 
+    87 x[3,9]       *              1             0             1 
+    88 x[3,10]      *              0             0             1 
+    89 x[3,11]      *              0             0             1 
+    90 x[3,12]      *              0             0             1 
+    91 x[3,13]      *              0             0             1 
+    92 x[3,14]      *              0             0             1 
+    93 x[3,15]      *              0             0             1 
+    94 x[3,16]      *              0             0             1 
+    95 x[3,17]      *              0             0             1 
+    96 x[3,18]      *              0             0             1 
+    97 x[3,19]      *              0             0             1 
+    98 x[3,20]      *              0             0             1 
+    99 x[3,21]      *              0             0             1 
+   100 x[3,22]      *              0             0             1 
+   101 x[3,23]      *              0             0             1 
+   102 x[3,24]      *              0             0             1 
+   103 x[3,25]      *              0             0             1 
+   104 x[3,26]      *              0             0             1 
+   105 x[4,0]       *              0             0             1 
+   106 x[4,1]       *              0             0             1 
+   107 x[4,2]       *              0             0             1 
+   108 x[4,3]       *              0             0             1 
+   109 x[4,5]       *              0             0             1 
+   110 x[4,6]       *              0             0             1 
+   111 x[4,7]       *              0             0             1 
+   112 x[4,8]       *              0             0             1 
+   113 x[4,9]       *              0             0             1 
+   114 x[4,10]      *              0             0             1 
+   115 x[4,11]      *              1             0             1 
+   116 x[4,12]      *              0             0             1 
+   117 x[4,13]      *              0             0             1 
+   118 x[4,14]      *              0             0             1 
+   119 x[4,15]      *              0             0             1 
+   120 x[4,16]      *              0             0             1 
+   121 x[4,17]      *              0             0             1 
+   122 x[4,18]      *              0             0             1 
+   123 x[4,19]      *              0             0             1 
+   124 x[4,20]      *              0             0             1 
+   125 x[4,21]      *              0             0             1 
+   126 x[4,22]      *              0             0             1 
+   127 x[4,23]      *              0             0             1 
+   128 x[4,24]      *              0             0             1 
+   129 x[4,25]      *              0             0             1 
+   130 x[4,26]      *              0             0             1 
+   131 x[5,0]       *              0             0             1 
+   132 x[5,1]       *              0             0             1 
+   133 x[5,2]       *              0             0             1 
+   134 x[5,3]       *              0             0             1 
+   135 x[5,4]       *              0             0             1 
+   136 x[5,6]       *              0             0             1 
+   137 x[5,7]       *              0             0             1 
+   138 x[5,8]       *              0             0             1 
+   139 x[5,9]       *              0             0             1 
+   140 x[5,10]      *              0             0             1 
+   141 x[5,11]      *              0             0             1 
+   142 x[5,12]      *              1             0             1 
+   143 x[5,13]      *              0             0             1 
+   144 x[5,14]      *              0             0             1 
+   145 x[5,15]      *              0             0             1 
+   146 x[5,16]      *              0             0             1 
+   147 x[5,17]      *              0             0             1 
+   148 x[5,18]      *              0             0             1 
+   149 x[5,19]      *              0             0             1 
+   150 x[5,20]      *              0             0             1 
+   151 x[5,21]      *              0             0             1 
+   152 x[5,22]      *              0             0             1 
+   153 x[5,23]      *              0             0             1 
+   154 x[5,24]      *              0             0             1 
+   155 x[5,25]      *              0             0             1 
+   156 x[5,26]      *              0             0             1 
+   157 x[6,0]       *              0             0             1 
+   158 x[6,1]       *              0             0             1 
+   159 x[6,2]       *              0             0             1 
+   160 x[6,3]       *              0             0             1 
+   161 x[6,4]       *              0             0             1 
+   162 x[6,5]       *              0             0             1 
+   163 x[6,7]       *              0             0             1 
+   164 x[6,8]       *              0             0             1 
+   165 x[6,9]       *              0             0             1 
+   166 x[6,10]      *              0             0             1 
+   167 x[6,11]      *              0             0             1 
+   168 x[6,12]      *              0             0             1 
+   169 x[6,13]      *              0             0             1 
+   170 x[6,14]      *              0             0             1 
+   171 x[6,15]      *              0             0             1 
+   172 x[6,16]      *              1             0             1 
+   173 x[6,17]      *              0             0             1 
+   174 x[6,18]      *              0             0             1 
+   175 x[6,19]      *              0             0             1 
+   176 x[6,20]      *              0             0             1 
+   177 x[6,21]      *              0             0             1 
+   178 x[6,22]      *              0             0             1 
+   179 x[6,23]      *              0             0             1 
+   180 x[6,24]      *              0             0             1 
+   181 x[6,25]      *              0             0             1 
+   182 x[6,26]      *              0             0             1 
+   183 x[7,0]       *              0             0             1 
+   184 x[7,1]       *              0             0             1 
+   185 x[7,2]       *              0             0             1 
+   186 x[7,3]       *              0             0             1 
+   187 x[7,4]       *              0             0             1 
+   188 x[7,5]       *              0             0             1 
+   189 x[7,6]       *              0             0             1 
+   190 x[7,8]       *              0             0             1 
+   191 x[7,9]       *              0             0             1 
+   192 x[7,10]      *              0             0             1 
+   193 x[7,11]      *              0             0             1 
+   194 x[7,12]      *              0             0             1 
+   195 x[7,13]      *              0             0             1 
+   196 x[7,14]      *              1             0             1 
+   197 x[7,15]      *              0             0             1 
+   198 x[7,16]      *              0             0             1 
+   199 x[7,17]      *              0             0             1 
+   200 x[7,18]      *              0             0             1 
+   201 x[7,19]      *              0             0             1 
+   202 x[7,20]      *              0             0             1 
+   203 x[7,21]      *              0             0             1 
+   204 x[7,22]      *              0             0             1 
+   205 x[7,23]      *              0             0             1 
+   206 x[7,24]      *              0             0             1 
+   207 x[7,25]      *              0             0             1 
+   208 x[7,26]      *              0             0             1 
+   209 x[8,0]       *              0             0             1 
+   210 x[8,1]       *              0             0             1 
+   211 x[8,2]       *              0             0             1 
+   212 x[8,3]       *              0             0             1 
+   213 x[8,4]       *              1             0             1 
+   214 x[8,5]       *              0             0             1 
+   215 x[8,6]       *              0             0             1 
+   216 x[8,7]       *              0             0             1 
+   217 x[8,9]       *              0             0             1 
+   218 x[8,10]      *              0             0             1 
+   219 x[8,11]      *              0             0             1 
+   220 x[8,12]      *              0             0             1 
+   221 x[8,13]      *              0             0             1 
+   222 x[8,14]      *              0             0             1 
+   223 x[8,15]      *              0             0             1 
+   224 x[8,16]      *              0             0             1 
+   225 x[8,17]      *              0             0             1 
+   226 x[8,18]      *              0             0             1 
+   227 x[8,19]      *              0             0             1 
+   228 x[8,20]      *              0             0             1 
+   229 x[8,21]      *              0             0             1 
+   230 x[8,22]      *              0             0             1 
+   231 x[8,23]      *              0             0             1 
+   232 x[8,24]      *              0             0             1 
+   233 x[8,25]      *              0             0             1 
+   234 x[8,26]      *              0             0             1 
+   235 x[9,0]       *              0             0             1 
+   236 x[9,1]       *              1             0             1 
+   237 x[9,2]       *              0             0             1 
+   238 x[9,3]       *              0             0             1 
+   239 x[9,4]       *              0             0             1 
+   240 x[9,5]       *              0             0             1 
+   241 x[9,6]       *              0             0             1 
+   242 x[9,7]       *              0             0             1 
+   243 x[9,8]       *              0             0             1 
+   244 x[9,10]      *              0             0             1 
+   245 x[9,11]      *              0             0             1 
+   246 x[9,12]      *              0             0             1 
+   247 x[9,13]      *              0             0             1 
+   248 x[9,14]      *              0             0             1 
+   249 x[9,15]      *              0             0             1 
+   250 x[9,16]      *              0             0             1 
+   251 x[9,17]      *              0             0             1 
+   252 x[9,18]      *              0             0             1 
+   253 x[9,19]      *              0             0             1 
+   254 x[9,20]      *              0             0             1 
+   255 x[9,21]      *              0             0             1 
+   256 x[9,22]      *              0             0             1 
+   257 x[9,23]      *              0             0             1 
+   258 x[9,24]      *              0             0             1 
+   259 x[9,25]      *              0             0             1 
+   260 x[9,26]      *              0             0             1 
+   261 x[10,0]      *              0             0             1 
+   262 x[10,1]      *              0             0             1 
+   263 x[10,2]      *              0             0             1 
+   264 x[10,3]      *              0             0             1 
+   265 x[10,4]      *              0             0             1 
+   266 x[10,5]      *              0             0             1 
+   267 x[10,6]      *              0             0             1 
+   268 x[10,7]      *              0             0             1 
+   269 x[10,8]      *              0             0             1 
+   270 x[10,9]      *              0             0             1 
+   271 x[10,11]     *              0             0             1 
+   272 x[10,12]     *              0             0             1 
+   273 x[10,13]     *              0             0             1 
+   274 x[10,14]     *              0             0             1 
+   275 x[10,15]     *              0             0             1 
+   276 x[10,16]     *              0             0             1 
+   277 x[10,17]     *              0             0             1 
+   278 x[10,18]     *              0             0             1 
+   279 x[10,19]     *              1             0             1 
+   280 x[10,20]     *              0             0             1 
+   281 x[10,21]     *              0             0             1 
+   282 x[10,22]     *              0             0             1 
+   283 x[10,23]     *              0             0             1 
+   284 x[10,24]     *              0             0             1 
+   285 x[10,25]     *              0             0             1 
+   286 x[10,26]     *              0             0             1 
+   287 x[11,0]      *              0             0             1 
+   288 x[11,1]      *              0             0             1 
+   289 x[11,2]      *              0             0             1 
+   290 x[11,3]      *              0             0             1 
+   291 x[11,4]      *              0             0             1 
+   292 x[11,5]      *              0             0             1 
+   293 x[11,6]      *              0             0             1 
+   294 x[11,7]      *              1             0             1 
+   295 x[11,8]      *              0             0             1 
+   296 x[11,9]      *              0             0             1 
+   297 x[11,10]     *              0             0             1 
+   298 x[11,12]     *              0             0             1 
+   299 x[11,13]     *              0             0             1 
+   300 x[11,14]     *              0             0             1 
+   301 x[11,15]     *              0             0             1 
+   302 x[11,16]     *              0             0             1 
+   303 x[11,17]     *              0             0             1 
+   304 x[11,18]     *              0             0             1 
+   305 x[11,19]     *              0             0             1 
+   306 x[11,20]     *              0             0             1 
+   307 x[11,21]     *              0             0             1 
+   308 x[11,22]     *              0             0             1 
+   309 x[11,23]     *              0             0             1 
+   310 x[11,24]     *              0             0             1 
+   311 x[11,25]     *              0             0             1 
+   312 x[11,26]     *              0             0             1 
+   313 x[12,0]      *              0             0             1 
+   314 x[12,1]      *              0             0             1 
+   315 x[12,2]      *              0             0             1 
+   316 x[12,3]      *              0             0             1 
+   317 x[12,4]      *              0             0             1 
+   318 x[12,5]      *              0             0             1 
+   319 x[12,6]      *              0             0             1 
+   320 x[12,7]      *              0             0             1 
+   321 x[12,8]      *              0             0             1 
+   322 x[12,9]      *              0             0             1 
+   323 x[12,10]     *              0             0             1 
+   324 x[12,11]     *              0             0             1 
+   325 x[12,13]     *              0             0             1 
+   326 x[12,14]     *              0             0             1 
+   327 x[12,15]     *              1             0             1 
+   328 x[12,16]     *              0             0             1 
+   329 x[12,17]     *              0             0             1 
+   330 x[12,18]     *              0             0             1 
+   331 x[12,19]     *              0             0             1 
+   332 x[12,20]     *              0             0             1 
+   333 x[12,21]     *              0             0             1 
+   334 x[12,22]     *              0             0             1 
+   335 x[12,23]     *              0             0             1 
+   336 x[12,24]     *              0             0             1 
+   337 x[12,25]     *              0             0             1 
+   338 x[12,26]     *              0             0             1 
+   339 x[13,0]      *              0             0             1 
+   340 x[13,1]      *              0             0             1 
+   341 x[13,2]      *              0             0             1 
+   342 x[13,3]      *              0             0             1 
+   343 x[13,4]      *              0             0             1 
+   344 x[13,5]      *              0             0             1 
+   345 x[13,6]      *              0             0             1 
+   346 x[13,7]      *              0             0             1 
+   347 x[13,8]      *              0             0             1 
+   348 x[13,9]      *              0             0             1 
+   349 x[13,10]     *              0             0             1 
+   350 x[13,11]     *              0             0             1 
+   351 x[13,12]     *              0             0             1 
+   352 x[13,14]     *              0             0             1 
+   353 x[13,15]     *              0             0             1 
+   354 x[13,16]     *              0             0             1 
+   355 x[13,17]     *              0             0             1 
+   356 x[13,18]     *              0             0             1 
+   357 x[13,19]     *              0             0             1 
+   358 x[13,20]     *              1             0             1 
+   359 x[13,21]     *              0             0             1 
+   360 x[13,22]     *              0             0             1 
+   361 x[13,23]     *              0             0             1 
+   362 x[13,24]     *              0             0             1 
+   363 x[13,25]     *              0             0             1 
+   364 x[13,26]     *              0             0             1 
+   365 x[14,0]      *              0             0             1 
+   366 x[14,1]      *              0             0             1 
+   367 x[14,2]      *              0             0             1 
+   368 x[14,3]      *              0             0             1 
+   369 x[14,4]      *              0             0             1 
+   370 x[14,5]      *              0             0             1 
+   371 x[14,6]      *              1             0             1 
+   372 x[14,7]      *              0             0             1 
+   373 x[14,8]      *              0             0             1 
+   374 x[14,9]      *              0             0             1 
+   375 x[14,10]     *              0             0             1 
+   376 x[14,11]     *              0             0             1 
+   377 x[14,12]     *              0             0             1 
+   378 x[14,13]     *              0             0             1 
+   379 x[14,15]     *              0             0             1 
+   380 x[14,16]     *              0             0             1 
+   381 x[14,17]     *              0             0             1 
+   382 x[14,18]     *              0             0             1 
+   383 x[14,19]     *              0             0             1 
+   384 x[14,20]     *              0             0             1 
+   385 x[14,21]     *              0             0             1 
+   386 x[14,22]     *              0             0             1 
+   387 x[14,23]     *              0             0             1 
+   388 x[14,24]     *              0             0             1 
+   389 x[14,25]     *              0             0             1 
+   390 x[14,26]     *              0             0             1 
+   391 x[15,0]      *              0             0             1 
+   392 x[15,1]      *              0             0             1 
+   393 x[15,2]      *              0             0             1 
+   394 x[15,3]      *              0             0             1 
+   395 x[15,4]      *              0             0             1 
+   396 x[15,5]      *              0             0             1 
+   397 x[15,6]      *              0             0             1 
+   398 x[15,7]      *              0             0             1 
+   399 x[15,8]      *              0             0             1 
+   400 x[15,9]      *              0             0             1 
+   401 x[15,10]     *              0             0             1 
+   402 x[15,11]     *              0             0             1 
+   403 x[15,12]     *              0             0             1 
+   404 x[15,13]     *              0             0             1 
+   405 x[15,14]     *              0             0             1 
+   406 x[15,16]     *              0             0             1 
+   407 x[15,17]     *              0             0             1 
+   408 x[15,18]     *              0             0             1 
+   409 x[15,19]     *              0             0             1 
+   410 x[15,20]     *              0             0             1 
+   411 x[15,21]     *              1             0             1 
+   412 x[15,22]     *              0             0             1 
+   413 x[15,23]     *              0             0             1 
+   414 x[15,24]     *              0             0             1 
+   415 x[15,25]     *              0             0             1 
+   416 x[15,26]     *              0             0             1 
+   417 x[16,0]      *              0             0             1 
+   418 x[16,1]      *              0             0             1 
+   419 x[16,2]      *              1             0             1 
+   420 x[16,3]      *              0             0             1 
+   421 x[16,4]      *              0             0             1 
+   422 x[16,5]      *              0             0             1 
+   423 x[16,6]      *              0             0             1 
+   424 x[16,7]      *              0             0             1 
+   425 x[16,8]      *              0             0             1 
+   426 x[16,9]      *              0             0             1 
+   427 x[16,10]     *              0             0             1 
+   428 x[16,11]     *              0             0             1 
+   429 x[16,12]     *              0             0             1 
+   430 x[16,13]     *              0             0             1 
+   431 x[16,14]     *              0             0             1 
+   432 x[16,15]     *              0             0             1 
+   433 x[16,17]     *              0             0             1 
+   434 x[16,18]     *              0             0             1 
+   435 x[16,19]     *              0             0             1 
+   436 x[16,20]     *              0             0             1 
+   437 x[16,21]     *              0             0             1 
+   438 x[16,22]     *              0             0             1 
+   439 x[16,23]     *              0             0             1 
+   440 x[16,24]     *              0             0             1 
+   441 x[16,25]     *              0             0             1 
+   442 x[16,26]     *              0             0             1 
+   443 x[17,0]      *              0             0             1 
+   444 x[17,1]      *              0             0             1 
+   445 x[17,2]      *              0             0             1 
+   446 x[17,3]      *              0             0             1 
+   447 x[17,4]      *              0             0             1 
+   448 x[17,5]      *              0             0             1 
+   449 x[17,6]      *              0             0             1 
+   450 x[17,7]      *              0             0             1 
+   451 x[17,8]      *              0             0             1 
+   452 x[17,9]      *              0             0             1 
+   453 x[17,10]     *              0             0             1 
+   454 x[17,11]     *              0             0             1 
+   455 x[17,12]     *              0             0             1 
+   456 x[17,13]     *              0             0             1 
+   457 x[17,14]     *              0             0             1 
+   458 x[17,15]     *              0             0             1 
+   459 x[17,16]     *              0             0             1 
+   460 x[17,18]     *              0             0             1 
+   461 x[17,19]     *              0             0             1 
+   462 x[17,20]     *              0             0             1 
+   463 x[17,21]     *              0             0             1 
+   464 x[17,22]     *              0             0             1 
+   465 x[17,23]     *              0             0             1 
+   466 x[17,24]     *              1             0             1 
+   467 x[17,25]     *              0             0             1 
+   468 x[17,26]     *              0             0             1 
+   469 x[18,0]      *              0             0             1 
+   470 x[18,1]      *              0             0             1 
+   471 x[18,2]      *              0             0             1 
+   472 x[18,3]      *              0             0             1 
+   473 x[18,4]      *              0             0             1 
+   474 x[18,5]      *              0             0             1 
+   475 x[18,6]      *              0             0             1 
+   476 x[18,7]      *              0             0             1 
+   477 x[18,8]      *              0             0             1 
+   478 x[18,9]      *              0             0             1 
+   479 x[18,10]     *              0             0             1 
+   480 x[18,11]     *              0             0             1 
+   481 x[18,12]     *              0             0             1 
+   482 x[18,13]     *              0             0             1 
+   483 x[18,14]     *              0             0             1 
+   484 x[18,15]     *              0             0             1 
+   485 x[18,16]     *              0             0             1 
+   486 x[18,17]     *              0             0             1 
+   487 x[18,19]     *              0             0             1 
+   488 x[18,20]     *              0             0             1 
+   489 x[18,21]     *              0             0             1 
+   490 x[18,22]     *              1             0             1 
+   491 x[18,23]     *              0             0             1 
+   492 x[18,24]     *              0             0             1 
+   493 x[18,25]     *              0             0             1 
+   494 x[18,26]     *              0             0             1 
+   495 x[19,0]      *              0             0             1 
+   496 x[19,1]      *              0             0             1 
+   497 x[19,2]      *              0             0             1 
+   498 x[19,3]      *              0             0             1 
+   499 x[19,4]      *              0             0             1 
+   500 x[19,5]      *              1             0             1 
+   501 x[19,6]      *              0             0             1 
+   502 x[19,7]      *              0             0             1 
+   503 x[19,8]      *              0             0             1 
+   504 x[19,9]      *              0             0             1 
+   505 x[19,10]     *              0             0             1 
+   506 x[19,11]     *              0             0             1 
+   507 x[19,12]     *              0             0             1 
+   508 x[19,13]     *              0             0             1 
+   509 x[19,14]     *              0             0             1 
+   510 x[19,15]     *              0             0             1 
+   511 x[19,16]     *              0             0             1 
+   512 x[19,17]     *              0             0             1 
+   513 x[19,18]     *              0             0             1 
+   514 x[19,20]     *              0             0             1 
+   515 x[19,21]     *              0             0             1 
+   516 x[19,22]     *              0             0             1 
+   517 x[19,23]     *              0             0             1 
+   518 x[19,24]     *              0             0             1 
+   519 x[19,25]     *              0             0             1 
+   520 x[19,26]     *              0             0             1 
+   521 x[20,0]      *              0             0             1 
+   522 x[20,1]      *              0             0             1 
+   523 x[20,2]      *              0             0             1 
+   524 x[20,3]      *              0             0             1 
+   525 x[20,4]      *              0             0             1 
+   526 x[20,5]      *              0             0             1 
+   527 x[20,6]      *              0             0             1 
+   528 x[20,7]      *              0             0             1 
+   529 x[20,8]      *              1             0             1 
+   530 x[20,9]      *              0             0             1 
+   531 x[20,10]     *              0             0             1 
+   532 x[20,11]     *              0             0             1 
+   533 x[20,12]     *              0             0             1 
+   534 x[20,13]     *              0             0             1 
+   535 x[20,14]     *              0             0             1 
+   536 x[20,15]     *              0             0             1 
+   537 x[20,16]     *              0             0             1 
+   538 x[20,17]     *              0             0             1 
+   539 x[20,18]     *              0             0             1 
+   540 x[20,19]     *              0             0             1 
+   541 x[20,21]     *              0             0             1 
+   542 x[20,22]     *              0             0             1 
+   543 x[20,23]     *              0             0             1 
+   544 x[20,24]     *              0             0             1 
+   545 x[20,25]     *              0             0             1 
+   546 x[20,26]     *              0             0             1 
+   547 x[21,0]      *              0             0             1 
+   548 x[21,1]      *              0             0             1 
+   549 x[21,2]      *              0             0             1 
+   550 x[21,3]      *              0             0             1 
+   551 x[21,4]      *              0             0             1 
+   552 x[21,5]      *              0             0             1 
+   553 x[21,6]      *              0             0             1 
+   554 x[21,7]      *              0             0             1 
+   555 x[21,8]      *              0             0             1 
+   556 x[21,9]      *              0             0             1 
+   557 x[21,10]     *              0             0             1 
+   558 x[21,11]     *              0             0             1 
+   559 x[21,12]     *              0             0             1 
+   560 x[21,13]     *              0             0             1 
+   561 x[21,14]     *              0             0             1 
+   562 x[21,15]     *              0             0             1 
+   563 x[21,16]     *              0             0             1 
+   564 x[21,17]     *              1             0             1 
+   565 x[21,18]     *              0             0             1 
+   566 x[21,19]     *              0             0             1 
+   567 x[21,20]     *              0             0             1 
+   568 x[21,22]     *              0             0             1 
+   569 x[21,23]     *              0             0             1 
+   570 x[21,24]     *              0             0             1 
+   571 x[21,25]     *              0             0             1 
+   572 x[21,26]     *              0             0             1 
+   573 x[22,0]      *              0             0             1 
+   574 x[22,1]      *              0             0             1 
+   575 x[22,2]      *              0             0             1 
+   576 x[22,3]      *              0             0             1 
+   577 x[22,4]      *              0             0             1 
+   578 x[22,5]      *              0             0             1 
+   579 x[22,6]      *              0             0             1 
+   580 x[22,7]      *              0             0             1 
+   581 x[22,8]      *              0             0             1 
+   582 x[22,9]      *              0             0             1 
+   583 x[22,10]     *              0             0             1 
+   584 x[22,11]     *              0             0             1 
+   585 x[22,12]     *              0             0             1 
+   586 x[22,13]     *              0             0             1 
+   587 x[22,14]     *              0             0             1 
+   588 x[22,15]     *              0             0             1 
+   589 x[22,16]     *              0             0             1 
+   590 x[22,17]     *              0             0             1 
+   591 x[22,18]     *              0             0             1 
+   592 x[22,19]     *              0             0             1 
+   593 x[22,20]     *              0             0             1 
+   594 x[22,21]     *              0             0             1 
+   595 x[22,23]     *              1             0             1 
+   596 x[22,24]     *              0             0             1 
+   597 x[22,25]     *              0             0             1 
+   598 x[22,26]     *              0             0             1 
+   599 x[23,0]      *              0             0             1 
+   600 x[23,1]      *              0             0             1 
+   601 x[23,2]      *              0             0             1 
+   602 x[23,3]      *              0             0             1 
+   603 x[23,4]      *              0             0             1 
+   604 x[23,5]      *              0             0             1 
+   605 x[23,6]      *              0             0             1 
+   606 x[23,7]      *              0             0             1 
+   607 x[23,8]      *              0             0             1 
+   608 x[23,9]      *              0             0             1 
+   609 x[23,10]     *              0             0             1 
+   610 x[23,11]     *              0             0             1 
+   611 x[23,12]     *              0             0             1 
+   612 x[23,13]     *              0             0             1 
+   613 x[23,14]     *              0             0             1 
+   614 x[23,15]     *              0             0             1 
+   615 x[23,16]     *              0             0             1 
+   616 x[23,17]     *              0             0             1 
+   617 x[23,18]     *              0             0             1 
+   618 x[23,19]     *              0             0             1 
+   619 x[23,20]     *              0             0             1 
+   620 x[23,21]     *              0             0             1 
+   621 x[23,22]     *              0             0             1 
+   622 x[23,24]     *              0             0             1 
+   623 x[23,25]     *              0             0             1 
+   624 x[23,26]     *              1             0             1 
+   625 x[24,0]      *              0             0             1 
+   626 x[24,1]      *              0             0             1 
+   627 x[24,2]      *              0             0             1 
+   628 x[24,3]      *              0             0             1 
+   629 x[24,4]      *              0             0             1 
+   630 x[24,5]      *              0             0             1 
+   631 x[24,6]      *              0             0             1 
+   632 x[24,7]      *              0             0             1 
+   633 x[24,8]      *              0             0             1 
+   634 x[24,9]      *              0             0             1 
+   635 x[24,10]     *              0             0             1 
+   636 x[24,11]     *              0             0             1 
+   637 x[24,12]     *              0             0             1 
+   638 x[24,13]     *              0             0             1 
+   639 x[24,14]     *              0             0             1 
+   640 x[24,15]     *              0             0             1 
+   641 x[24,16]     *              0             0             1 
+   642 x[24,17]     *              0             0             1 
+   643 x[24,18]     *              0             0             1 
+   644 x[24,19]     *              0             0             1 
+   645 x[24,20]     *              0             0             1 
+   646 x[24,21]     *              0             0             1 
+   647 x[24,22]     *              0             0             1 
+   648 x[24,23]     *              0             0             1 
+   649 x[24,25]     *              1             0             1 
+   650 x[24,26]     *              0             0             1 
+   651 x[25,0]      *              0             0             1 
+   652 x[25,1]      *              0             0             1 
+   653 x[25,2]      *              0             0             1 
+   654 x[25,3]      *              0             0             1 
+   655 x[25,4]      *              0             0             1 
+   656 x[25,5]      *              0             0             1 
+   657 x[25,6]      *              0             0             1 
+   658 x[25,7]      *              0             0             1 
+   659 x[25,8]      *              0             0             1 
+   660 x[25,9]      *              0             0             1 
+   661 x[25,10]     *              0             0             1 
+   662 x[25,11]     *              0             0             1 
+   663 x[25,12]     *              0             0             1 
+   664 x[25,13]     *              0             0             1 
+   665 x[25,14]     *              0             0             1 
+   666 x[25,15]     *              0             0             1 
+   667 x[25,16]     *              0             0             1 
+   668 x[25,17]     *              0             0             1 
+   669 x[25,18]     *              1             0             1 
+   670 x[25,19]     *              0             0             1 
+   671 x[25,20]     *              0             0             1 
+   672 x[25,21]     *              0             0             1 
+   673 x[25,22]     *              0             0             1 
+   674 x[25,23]     *              0             0             1 
+   675 x[25,24]     *              0             0             1 
+   676 x[25,26]     *              0             0             1 
+   677 x[26,0]      *              0             0             1 
+   678 x[26,1]      *              0             0             1 
+   679 x[26,2]      *              0             0             1 
+   680 x[26,3]      *              0             0             1 
+   681 x[26,4]      *              0             0             1 
+   682 x[26,5]      *              0             0             1 
+   683 x[26,6]      *              0             0             1 
+   684 x[26,7]      *              0             0             1 
+   685 x[26,8]      *              0             0             1 
+   686 x[26,9]      *              0             0             1 
+   687 x[26,10]     *              0             0             1 
+   688 x[26,11]     *              0             0             1 
+   689 x[26,12]     *              0             0             1 
+   690 x[26,13]     *              0             0             1 
+   691 x[26,14]     *              0             0             1 
+   692 x[26,15]     *              0             0             1 
+   693 x[26,16]     *              0             0             1 
+   694 x[26,17]     *              0             0             1 
+   695 x[26,18]     *              0             0             1 
+   696 x[26,19]     *              0             0             1 
+   697 x[26,20]     *              0             0             1 
+   698 x[26,21]     *              0             0             1 
+   699 x[26,22]     *              0             0             1 
+   700 x[26,23]     *              0             0             1 
+   701 x[26,24]     *              0             0             1 
+   702 x[26,25]     *              0             0             1 
+   703 x[26,26]     *              0             0             1 
+   704 x[0,0]       *              0             0             1 
+   705 o[0]                        0             0               
+   706 o[1]                        3             0               
+   707 o[2]                       13             0               
+   708 o[3]                        1             0               
+   709 o[4]                        7             0               
+   710 o[5]                    99988             0               
+   711 o[6]                       11             0               
+   712 o[7]                        9             0               
+   713 o[8]                        6             0               
+   714 o[9]                        2             0               
+   715 o[10]                   99986             0               
+   716 o[11]                       8             0               
+   717 o[12]                   99989             0               
+   718 o[13]                       4             0               
+   719 o[14]                      10             0               
+   720 o[15]                   99990             0               
+   721 o[16]                      12             0               
+   722 o[17]                   99992             0               
+   723 o[18]                   99995             0               
+   724 o[19]                   99987             0               
+   725 o[20]                       5             0               
+   726 o[21]                   99991             0               
+   727 o[22]                   99996             0               
+   728 o[23]                   99997             0               
+   729 o[24]                   99993             0               
+   730 o[25]                   99994             0               
+   731 o[26]                   99998             0               
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

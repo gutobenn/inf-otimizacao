@@ -1,0 +1,22 @@
+ESC07
+Time used:   0.0 secs
+
+ESC12
+Time used:   1.2 secs
+
+ESC25
+Time used:   129.6 secs
+
+ESC47
+
+ESC78
+
+ft70.1
+
+prob.100
+
+rbg109a
+
+rbg150a
+
+rbg174a

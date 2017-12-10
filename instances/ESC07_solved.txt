@@ -1,0 +1,348 @@
+Problem:    glpk
+Rows:       129
+Columns:    83 (74 integer, 74 binary)
+Non-zeros:  461
+Status:     INTEGER OPTIMAL
+Objective:  total = 2125 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 total                    2125                             
+     2 leave[0]                    1             1             = 
+     3 leave[1]                    1             1             = 
+     4 leave[2]                    1             1             = 
+     5 leave[3]                    1             1             = 
+     6 leave[4]                    1             1             = 
+     7 leave[5]                    1             1             = 
+     8 leave[6]                    1             1             = 
+     9 leave[7]                    1             1             = 
+    10 enter[1]                    1             1             = 
+    11 enter[2]                    1             1             = 
+    12 enter[3]                    1             1             = 
+    13 enter[4]                    1             1             = 
+    14 enter[5]                    1             1             = 
+    15 enter[6]                    1             1             = 
+    16 enter[7]                    1             1             = 
+    17 enter[8]                    1             1             = 
+    18 leave_last[0]
+                                   0            -0             = 
+    19 leave_last[1]
+                                   0            -0             = 
+    20 leave_last[2]
+                                   0            -0             = 
+    21 leave_last[3]
+                                   0            -0             = 
+    22 leave_last[4]
+                                   0            -0             = 
+    23 leave_last[5]
+                                   0            -0             = 
+    24 leave_last[6]
+                                   0            -0             = 
+    25 leave_last[7]
+                                   0            -0             = 
+    26 leave_last[8]
+                                   0            -0             = 
+    27 enter_first[0]
+                                   0            -0             = 
+    28 enter_first[1]
+                                   0            -0             = 
+    29 enter_first[2]
+                                   0            -0             = 
+    30 enter_first[3]
+                                   0            -0             = 
+    31 enter_first[4]
+                                   0            -0             = 
+    32 enter_first[5]
+                                   0            -0             = 
+    33 enter_first[6]
+                                   0            -0             = 
+    34 enter_first[7]
+                                   0            -0             = 
+    35 enter_first[8]
+                                   0            -0             = 
+    36 precedence[0,1]
+                                  -1                          -1 
+    37 precedence[0,2]
+                                  -4                          -1 
+    38 precedence[0,3]
+                                  -7                          -1 
+    39 precedence[0,4]
+                                  -2                          -1 
+    40 precedence[0,5]
+                                  -6                          -1 
+    41 precedence[0,6]
+                                  -5                          -1 
+    42 precedence[0,7]
+                                  -3                          -1 
+    43 precedence[0,8]
+                                  -8                          -1 
+    44 precedence[1,4]
+                                  -1                          -1 
+    45 precedence[1,5]
+                                  -5                          -1 
+    46 precedence[1,6]
+                                  -4                          -1 
+    47 precedence[1,7]
+                                  -2                          -1 
+    48 precedence[1,8]
+                                  -7                          -1 
+    49 precedence[2,8]
+                                  -4                          -1 
+    50 precedence[3,8]
+                                  -1                          -1 
+    51 precedence[4,5]
+                                  -4                          -1 
+    52 precedence[4,8]
+                                  -6                          -1 
+    53 precedence[5,8]
+                                  -2                          -1 
+    54 precedence[6,5]
+                                  -1                          -1 
+    55 precedence[6,8]
+                                  -3                          -1 
+    56 precedence[7,5]
+                                  -3                          -1 
+    57 precedence[7,8]
+                                  -5                          -1 
+    58 visit_order[0,1]
+                               99998                       99998 
+    59 visit_order[0,2]
+                                  -4                       99998 
+    60 visit_order[0,3]
+                                  -7                       99998 
+    61 visit_order[0,4]
+                                  -2                       99998 
+    62 visit_order[0,5]
+                                  -6                       99998 
+    63 visit_order[0,6]
+                                  -5                       99998 
+    64 visit_order[0,7]
+                                  -3                       99998 
+    65 visit_order[0,8]
+                                  -8                       99998 
+    66 visit_order[1,0]
+                                   1                       99998 
+    67 visit_order[1,2]
+                                  -3                       99998 
+    68 visit_order[1,3]
+                                  -6                       99998 
+    69 visit_order[1,4]
+                               99998                       99998 
+    70 visit_order[1,5]
+                                  -5                       99998 
+    71 visit_order[1,6]
+                                  -4                       99998 
+    72 visit_order[1,7]
+                                  -2                       99998 
+    73 visit_order[1,8]
+                                  -7                       99998 
+    74 visit_order[2,0]
+                                   4                       99998 
+    75 visit_order[2,1]
+                                   3                       99998 
+    76 visit_order[2,3]
+                                  -3                       99998 
+    77 visit_order[2,4]
+                                   2                       99998 
+    78 visit_order[2,5]
+                                  -2                       99998 
+    79 visit_order[2,6]
+                               99998                       99998 
+    80 visit_order[2,7]
+                                   1                       99998 
+    81 visit_order[2,8]
+                                  -4                       99998 
+    82 visit_order[3,0]
+                                   7                       99998 
+    83 visit_order[3,1]
+                                   6                       99998 
+    84 visit_order[3,2]
+                                   3                       99998 
+    85 visit_order[3,4]
+                                   5                       99998 
+    86 visit_order[3,5]
+                                   1                       99998 
+    87 visit_order[3,6]
+                                   2                       99998 
+    88 visit_order[3,7]
+                                   4                       99998 
+    89 visit_order[3,8]
+                               99998                       99998 
+    90 visit_order[4,0]
+                                   2                       99998 
+    91 visit_order[4,1]
+                                   1                       99998 
+    92 visit_order[4,2]
+                                  -2                       99998 
+    93 visit_order[4,3]
+                                  -5                       99998 
+    94 visit_order[4,5]
+                                  -4                       99998 
+    95 visit_order[4,6]
+                                  -3                       99998 
+    96 visit_order[4,7]
+                               99998                       99998 
+    97 visit_order[4,8]
+                                  -6                       99998 
+    98 visit_order[5,0]
+                                   6                       99998 
+    99 visit_order[5,1]
+                                   5                       99998 
+   100 visit_order[5,2]
+                                   2                       99998 
+   101 visit_order[5,3]
+                               99998                       99998 
+   102 visit_order[5,4]
+                                   4                       99998 
+   103 visit_order[5,6]
+                                   1                       99998 
+   104 visit_order[5,7]
+                                   3                       99998 
+   105 visit_order[5,8]
+                                  -2                       99998 
+   106 visit_order[6,0]
+                                   5                       99998 
+   107 visit_order[6,1]
+                                   4                       99998 
+   108 visit_order[6,2]
+                                   1                       99998 
+   109 visit_order[6,3]
+                                  -2                       99998 
+   110 visit_order[6,4]
+                                   3                       99998 
+   111 visit_order[6,5]
+                               99998                       99998 
+   112 visit_order[6,7]
+                                   2                       99998 
+   113 visit_order[6,8]
+                                  -3                       99998 
+   114 visit_order[7,0]
+                                   3                       99998 
+   115 visit_order[7,1]
+                                   2                       99998 
+   116 visit_order[7,2]
+                               99998                       99998 
+   117 visit_order[7,3]
+                                  -4                       99998 
+   118 visit_order[7,4]
+                                   1                       99998 
+   119 visit_order[7,5]
+                                  -3                       99998 
+   120 visit_order[7,6]
+                                  -2                       99998 
+   121 visit_order[7,8]
+                                  -5                       99998 
+   122 visit_order[8,0]
+                                   8                       99998 
+   123 visit_order[8,1]
+                                   7                       99998 
+   124 visit_order[8,2]
+                                   4                       99998 
+   125 visit_order[8,3]
+                                   1                       99998 
+   126 visit_order[8,4]
+                                   6                       99998 
+   127 visit_order[8,5]
+                                   2                       99998 
+   128 visit_order[8,6]
+                                   3                       99998 
+   129 visit_order[8,7]
+                                   5                       99998 
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 x[0,1]       *              1             0             1 
+     2 x[0,2]       *              0             0             1 
+     3 x[0,3]       *              0             0             1 
+     4 x[0,4]       *              0             0             1 
+     5 x[0,5]       *              0             0             1 
+     6 x[0,6]       *              0             0             1 
+     7 x[0,7]       *              0             0             1 
+     8 x[0,8]       *              0             0             1 
+     9 x[1,0]       *              0             0             1 
+    10 x[1,2]       *              0             0             1 
+    11 x[1,3]       *              0             0             1 
+    12 x[1,4]       *              1             0             1 
+    13 x[1,5]       *              0             0             1 
+    14 x[1,6]       *              0             0             1 
+    15 x[1,7]       *              0             0             1 
+    16 x[1,8]       *              0             0             1 
+    17 x[2,0]       *              0             0             1 
+    18 x[2,1]       *              0             0             1 
+    19 x[2,3]       *              0             0             1 
+    20 x[2,4]       *              0             0             1 
+    21 x[2,5]       *              0             0             1 
+    22 x[2,6]       *              1             0             1 
+    23 x[2,7]       *              0             0             1 
+    24 x[2,8]       *              0             0             1 
+    25 x[3,0]       *              0             0             1 
+    26 x[3,1]       *              0             0             1 
+    27 x[3,2]       *              0             0             1 
+    28 x[3,4]       *              0             0             1 
+    29 x[3,5]       *              0             0             1 
+    30 x[3,6]       *              0             0             1 
+    31 x[3,7]       *              0             0             1 
+    32 x[3,8]       *              1             0             1 
+    33 x[4,0]       *              0             0             1 
+    34 x[4,1]       *              0             0             1 
+    35 x[4,2]       *              0             0             1 
+    36 x[4,3]       *              0             0             1 
+    37 x[4,5]       *              0             0             1 
+    38 x[4,6]       *              0             0             1 
+    39 x[4,7]       *              1             0             1 
+    40 x[4,8]       *              0             0             1 
+    41 x[5,0]       *              0             0             1 
+    42 x[5,1]       *              0             0             1 
+    43 x[5,2]       *              0             0             1 
+    44 x[5,3]       *              1             0             1 
+    45 x[5,4]       *              0             0             1 
+    46 x[5,6]       *              0             0             1 
+    47 x[5,7]       *              0             0             1 
+    48 x[5,8]       *              0             0             1 
+    49 x[6,0]       *              0             0             1 
+    50 x[6,1]       *              0             0             1 
+    51 x[6,2]       *              0             0             1 
+    52 x[6,3]       *              0             0             1 
+    53 x[6,4]       *              0             0             1 
+    54 x[6,5]       *              1             0             1 
+    55 x[6,7]       *              0             0             1 
+    56 x[6,8]       *              0             0             1 
+    57 x[7,0]       *              0             0             1 
+    58 x[7,1]       *              0             0             1 
+    59 x[7,2]       *              1             0             1 
+    60 x[7,3]       *              0             0             1 
+    61 x[7,4]       *              0             0             1 
+    62 x[7,5]       *              0             0             1 
+    63 x[7,6]       *              0             0             1 
+    64 x[7,8]       *              0             0             1 
+    65 x[8,0]       *              0             0             1 
+    66 x[8,1]       *              0             0             1 
+    67 x[8,2]       *              0             0             1 
+    68 x[8,3]       *              0             0             1 
+    69 x[8,4]       *              0             0             1 
+    70 x[8,5]       *              0             0             1 
+    71 x[8,6]       *              0             0             1 
+    72 x[8,7]       *              0             0             1 
+    73 x[8,8]       *              0             0             1 
+    74 x[0,0]       *              0             0             1 
+    75 o[0]                        0             0               
+    76 o[1]                        1             0               
+    77 o[2]                        4             0               
+    78 o[3]                        7             0               
+    79 o[4]                        2             0               
+    80 o[5]                        6             0               
+    81 o[6]                        5             0               
+    82 o[7]                        3             0               
+    83 o[8]                        8             0               
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 1.46e-11 on row 36
+        max.rel.err = 7.28e-12 on row 36
+        High quality
+
+End of output

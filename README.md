@@ -1,15 +1,22 @@
 # Otimização
-
 Sequential Ordering Problem com Busca Tabu
 
-## TODO
-- Como compilar e usar
-- verificar TODOs
-
 ## Instance to dat
-e.g:
-g++ instanceToDat.cpp -o instanceToDat
-./instanceToDat < instances/ESC07.sop > instances/ESC07.sop
+No diretório raíz
 
-## Executar GLPK
-glpsol -m glpk.mod -d instances/ESC07.dat -o saida.txt --tmlim 120
+Compilação: g++ instanceToDat.cpp -o instanceToDat
+
+Utilização: ./instanceToDat < instances/ESC07.sop > instances/ESC07.dat
+onde instances/ESC07.sop é o caminho relativo para o arquivo da instância  e instances/ESC07.dat o caminho relativo onde a saída será salva.
+
+## SOP main:
+Os comandos abaixo devem ser executados na pasta src.
+
+Compilação: g++ main.cpp -o main
+
+Utilização: ./main ../instances/ESC07.sop 2
+onde ../instances_ESC07.sop é o caminho relativo para o arquivo da instância e 2 é o identificador da semente aleatória a ser utilizada.
+
+## Eecutar GLPK
+Na pasta raíz, executar o seguinte comando para resolver o problema instances/ESC07.dat utilizando o GLPK e salvar a saída no arquivo.txt, com limite de uma hora
+glpsol -m glpk.mod -d instances/ESC07.dat -o saida.txt --tmlim 3600
