@@ -8,9 +8,9 @@
 using namespace std;
 
 static int INF = INT_MAX;
-static int MAX_ITERATIONS = 40; // TODO how many?
+static int MAX_ITERATIONS = 10;
 
-/* VECTOR UTILITIES */
+/*; VECTOR UTILITIES */
 void printBidimensionalVector(vector<vector<int> > v) {
     for (size_t i = 0; i < v.size(); i++) {
         for (size_t j = 0; j < v[i].size(); j++) {
@@ -44,7 +44,6 @@ void printTabuList() {
     }
 }
 
-//TODO ver se ta funcionando essa funcao
 bool isTabu(int i, int j) {
     return find(tabuList.begin(), tabuList.end(), make_pair(i,j)) != tabuList.end();
 }
@@ -79,9 +78,8 @@ bool isValidPath(vector<int> path, vector<vector<int> > costs){
                 return false;
             }
         }
-
-        return true;
     }
+    return true;
 }
 
 
@@ -114,38 +112,57 @@ void twoOptMove(vector<int> *path, int i, int j) {
 pair<int, int> twoOptSearch(vector<int> path, vector<vector<int> > costs){
     // Based on https://stackoverflow.com/questions/33043991/trouble-with-the-implementation-of-2-opt-and-3-opt-search-in-the-resolution-of-t
 
-    int iMin = -1, jMin = -1, change, oldCost, newCost, maxSaving = 0;
-
+    int iMin = -1, jMin = -1, iMinK=-1, jMinK=-1, change, oldCost, newCost, maxSaving = 0, probability;
+    bool foundBetterSolution = false;
+    vector<pair<int, int> > bestFounds;
     // repeat until there are not new improvement
     for(int i = 1; i < path.size() - 3; i++){
         for(int j = i + 1; j < path.size() - 2; j++){
-            cout << "twooptsearch: i = " << i << " j = " << j << endl;
-            if(isTabu(i,j)){
-                cout << "twooptsearch: isTabu=true" << endl;
+            probability = rand() % 10 + 1; // random number between 1 and 10
+            //cout << "PROBABILITY " << probability << endl;
+            //cout << "isTabu " << isTabu(i,j) << endl;
+            if(isTabu(i,j) && probability > 8){ // accept tabu 20% of times
                 break;
             }
 
             oldCost = getPathCost(path, costs);
-            cout << "twooptsearch: oldCost = " << oldCost << endl;
 
             vector<int> newPath = path;
-            twoOptMove(&path, i, j);
-            newCost = getPathCost(path, costs);
-            cout << "twooptsearch: newCost = " << newCost << endl;
+            twoOptMove(&newPath, i, j);
+            newCost = getPathCost(newPath, costs);
 
             change = newCost - oldCost;
 
-            cout << "twooptsearch: change = " << change << "   maxsaving = " << maxSaving << endl;
-
-            if(change < maxSaving && isValidPath(newPath, costs)){
-                cout << "twooptsearch: entrou no if cache < maxsaving e valid path" << endl;
-                iMin = i;
-                jMin = j;
-                maxSaving = change;
+            if(isValidPath(newPath, costs)){
+                if(change < maxSaving){
+                    iMin = i;
+                    jMin = j;
+                    maxSaving = change;
+                    foundBetterSolution = true;
+                    bestFounds.clear();
+                } else if(change == maxSaving){
+                    bestFounds.push_back(make_pair(i,j));
+                } else if(j-i > 3){ // Diversifying
+                    iMinK = i;
+                    jMinK = j;
+                }
             }
+        }
+    }
 
-            // TODO colocar aquele else?
-
+    if(!foundBetterSolution){
+        iMin = iMinK;
+        jMin = jMinK;
+    } else {
+        if(bestFounds.size() > 1){
+            //cout << "ENTROU IF BESTBOUND" << endl;
+            //for (size_t i = 0; i < bestFounds.size(); i++) {
+            //  cout << bestFounds[i].first << " " << bestFounds[i].second << " )" << endl;
+            //}
+            //cout << endl;
+            int random_index = rand() % bestFounds.size();
+            iMin = bestFounds[random_index].first;
+            jMin = bestFounds[random_index].second;
         }
     }
 
@@ -216,11 +233,23 @@ int getStartingCurrentSolution(vector<int> *tempPath, int dimension, vector<vect
 int main(int argc, const char * argv[]) {
     string initialInfo;
     int iterationsCounter = MAX_ITERATIONS;
+    long int randomSeeds[10] = {419281046, 927195464, 483380767, 771002500, 398382839, 379984894, 635420729, 979478050, 239064709, 157236716};
 
-    if (! argv[1]) {
-        cerr << "Usage: " << argv[0] << " <instance_file.sop>" << endl;
+    if (! argv[2]) {
+        cerr << "Usage: " << argv[0] << " <instance_file.sop> <random_seed_id>" << endl;
         return -1;
     }
+
+    if(stoi(argv[2]) > 10 || stoi(argv[2]) < 1){
+        cerr << "Argument 'random seed' must be in interval [1,10]" << endl;
+        return -1;
+    }
+
+    // Initialize srand with specified random seed
+    long int randomSeed = randomSeeds[stoi(argv[2])-1];
+    srand(randomSeed);
+    cout << "Random seed #" << argv[2] << ": " << randomSeed << endl;
+
 
     // Open file
     ifstream ifs;
@@ -278,25 +307,18 @@ int main(int argc, const char * argv[]) {
 
 
     while(iterationsCounter--) {
-        cout << "entrou no while" << endl;
-        // TODO RENOMEAR cosias
         pair<int, int> bestMove = twoOptSearch(tempPath, costs);
         if(bestMove.first == -1){
-            cout << "entrou no break";
             break;
         }
 
-        cout << "antes de mover" << endl;
         twoOptMove(&tempPath, bestMove.first, bestMove.second);
         tempCost = getPathCost(tempPath, costs);
-
-        //addRestrictionToTabuList(maxMove); TODO ja ta na lista tabu, acho q nao rprecisa disso. confirmar
 
         if(tempCost < bestCost) {
             bestCost = tempCost;
             bestPath = tempPath;
             iterationsCounter = MAX_ITERATIONS;
-            cout << "entrou no if do while" << endl;
         }
     }
 
