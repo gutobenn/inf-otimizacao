@@ -223,9 +223,9 @@ int getStartingCurrentSolution(vector<int> *tempPath, int dimension, vector<vect
 
     tempPath->push_back(dimension);
 
-    cout << "PATH: ";
-    printVector(*tempPath);
-    cout << endl;
+    //cout << "PATH: ";
+    //printVector(*tempPath);
+    //cout << endl;
 
     return totalCost;
 }
@@ -248,7 +248,7 @@ int main(int argc, const char * argv[]) {
     // Initialize srand with specified random seed
     long int randomSeed = randomSeeds[stoi(argv[2])-1];
     srand(randomSeed);
-    cout << "Random seed #" << argv[2] << ": " << randomSeed << endl;
+    //cout << "Random seed #" << argv[2] << ": " << randomSeed << endl;
 
 
     // Open file
@@ -299,12 +299,13 @@ int main(int argc, const char * argv[]) {
     int tempCost = bestCost;
     tempPath = bestPath;
 
-    cout << "Costs:" << endl;
-    printBidimensionalVector(costs);
-    cout << endl << "Starting Current Solution:" << endl;
-    printVector(tempPath);
-    cout << "has cost " << bestCost << endl;
+    //cout << "Costs:" << endl;
+    //printBidimensionalVector(costs);
+    //cout << endl << "Starting Current Solution:" << endl;
+    //printVector(tempPath);
+    cout << bestCost << ";";
 
+    clock_t begin = clock();
 
     while(iterationsCounter--) {
         pair<int, int> bestMove = twoOptSearch(tempPath, costs);
@@ -322,10 +323,15 @@ int main(int argc, const char * argv[]) {
         }
     }
 
-    cout << "Reached iteration " << MAX_ITERATIONS - iterationsCounter << endl;
-    cout << "Best Solution:";
-    printVector(bestPath);
-    cout << "with cost " << bestCost;
+    clock_t end = clock();
+    double elapsed_secs = double(end - begin) / CLOCKS_PER_SEC;
+
+    //cout << "Reached iteration " << MAX_ITERATIONS - iterationsCounter << endl;
+    //cout << "Best Solution:";
+    //printVector(bestPath);
+    cout << bestCost << ";";
+
+    cout << elapsed_secs << ";" << endl;
 
     return 0;
 }
