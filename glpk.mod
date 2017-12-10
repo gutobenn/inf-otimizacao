@@ -10,7 +10,7 @@ set V:= 0..n-1;
 /* Custo do nó i ao nó j */
 param c{i in V, j in V};
 
-/* Pares de precedência. O primeiro (i), precede o segundo ().*/
+/* Pares de precedência. O primeiro (i), precede o segundo (j).*/
 param p{i in V, j in V};
 
 /* Variáveis de Decisão */
