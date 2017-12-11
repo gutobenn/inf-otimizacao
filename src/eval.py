@@ -39,47 +39,57 @@ def calculateStatistics(filename, bestSolution):
 
 
 def evalAll(minExec, maxExec):
-    os.system("g++ main.cpp")
+    os.system("g++ -std=c++11 main.cpp")
 
     for i in xrange(minExec,maxExec):
-        os.system("./a.out ../instances/ESC07.sop " + str(i) + " >> ESC07sol.txt")
+	print "ESC07" + str(i)
+	os.system("./a.out ../instances/ESC07.sop " + str(i) + " >> ESC07sol.txt")
     calculateStatistics("ESC07sol.txt", 2125)
 
     for i in xrange(minExec,maxExec):
+	print "ESC12" + str(i)
         os.system("./a.out ../instances/ESC12.sop " + str(i) + " >> ESC12sol.txt")
     calculateStatistics("ESC12sol.txt", 1675)
 
     for i in xrange(minExec,maxExec):
-        os.system("./a.out ../instances/ESC25.sop " + str(i) + " >> ESC25sol.txt")
+        print "ESC25" + str(i)
+	os.system("./a.out ../instances/ESC25.sop " + str(i) + " >> ESC25sol.txt")
     calculateStatistics("ESC25sol.txt", 1681)
 
     for i in xrange(minExec,maxExec):
-        os.system("./a.out ../instances/ESC47.sop " + str(i) + " >> ESC47sol.txt")
+	print "ESC47" + str(i)
+	os.system("./a.out ../instances/ESC47.sop " + str(i) + " >> ESC47sol.txt")
     calculateStatistics("ESC47sol.txt", 1288)
 
     for i in xrange(minExec,maxExec):
-        os.system("./a.out ../instances/ESC78.sop " + str(i) + " >> ESC78sol.txt")
+	print "ESC78" + str(i)
+	os.system("./a.out ../instances/ESC78.sop " + str(i) + " >> ESC78sol.txt")
     calculateStatistics("ESC78sol.txt", 18230)
 
     for i in xrange(minExec,maxExec):
-        os.system("./a.out ../instances/ft70.1.sop " + str(i) + " >> ft70.1sol.txt")
+	print "ft70.1" + str(i)
+	os.system("./a.out ../instances/ft70.1.sop " + str(i) + " >> ft70.1sol.txt")
     calculateStatistics("ft70.1sol.txt", 39313)
 
     for i in xrange(minExec,maxExec):
-        os.system("./a.out ../instances/prob.100.sop " + str(i) + " >> prob.100sol.txt")
+	print "prob100" + str(i)
+	os.system("./a.out ../instances/prob.100.sop " + str(i) + " >> prob.100sol.txt")
     calculateStatistics("prob.100sol.txt", 1163)
 
     for i in xrange(minExec,maxExec):
-        os.system("./a.out ../instances/rbg109a.sop " + str(i) + " >> rbg109asol.txt")
-    calculateStatistics("rgb109asol.txt", 1038)
+	print "rbg109a" + str(i)
+	os.system("./a.out ../instances/rbg109a.sop " + str(i) + " >> rbg109asol.txt")
+    calculateStatistics("rbg109asol.txt", 1038)
 
     for i in xrange(minExec,maxExec):
-        os.system("./a.out ../instances/rbg150a.sop " + str(i) + " >> rbg150asol.txt")
-    calculateStatistics("rgb150asol.txt", 1750)
+	print "rbg150a" + str(i)
+	os.system("./a.out ../instances/rbg150a.sop " + str(i) + " >> rbg150asol.txt")
+    calculateStatistics("rbg150asol.txt", 1750)
 
     for i in xrange(minExec,maxExec):
-        os.system("./a.out ../instances/rbg174a.sop " + str(i) + " >> rbg174asol.txt")
-    calculateStatistics("rgb174asol.txt", 2033)
+	print "rbg174a" + str(i)
+	os.system("./a.out ../instances/rbg174a.sop " + str(i) + " >> rbg174asol.txt")
+    calculateStatistics("rbg174asol.txt", 2033)
 
 
 minExec = int(sys.argv[1])
