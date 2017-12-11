@@ -83,12 +83,13 @@ bool isValidPath(vector<int> path, vector<vector<int> > costs){
 }
 
 
-void twoOptMove(vector<int> *path, int i, int j) {
+int twoOptMove(vector<int> *path, vector<vector<int> > costs, int i, int j) {
     // i e j são os indices dos vértices no vetor path
     // Based on https://stackoverflow.com/questions/33043991/trouble-with-the-implementation-of-2-opt-and-3-opt-search-in-the-resolution-of-t
 
     vector<int> helpPath;
     helpPath.resize(path->size());
+    int cost = 0;
 
     // compute new tour
     for(int k = 0; k <= i; k++) {
@@ -101,15 +102,13 @@ void twoOptMove(vector<int> *path, int i, int j) {
         helpPath[k] = (*path)[k];
     }
 
-    // update tour
-    /*for(int i = 0; i < size; i++){
-        cities[i] = help_cities[i];
-    }*/
     (*path) = helpPath;
+
+    return getPathCost((*path),costs);
 }
 
 
-pair<int, int> twoOptSearch(vector<int> path, vector<vector<int> > costs){
+pair<int, int> twoOptSearch(vector<int> path, vector<vector<int> > costs, int pathCost){
     // Based on https://stackoverflow.com/questions/33043991/trouble-with-the-implementation-of-2-opt-and-3-opt-search-in-the-resolution-of-t
 
     int iMin = -1, jMin = -1, iMinK=-1, jMinK=-1, change, oldCost, newCost, maxSaving = 0, probability;
@@ -125,11 +124,10 @@ pair<int, int> twoOptSearch(vector<int> path, vector<vector<int> > costs){
                 break;
             }
 
-            oldCost = getPathCost(path, costs);
+            oldCost = pathCost;
 
             vector<int> newPath = path;
-            twoOptMove(&newPath, i, j);
-            newCost = getPathCost(newPath, costs);
+            newCost = twoOptMove(&newPath, costs, i, j);
 
             change = newCost - oldCost;
 
@@ -308,13 +306,12 @@ int main(int argc, const char * argv[]) {
     clock_t begin = clock();
 
     while(iterationsCounter--) {
-        pair<int, int> bestMove = twoOptSearch(tempPath, costs);
+        pair<int, int> bestMove = twoOptSearch(tempPath, costs, tempCost);
         if(bestMove.first == -1){
             break;
         }
 
-        twoOptMove(&tempPath, bestMove.first, bestMove.second);
-        tempCost = getPathCost(tempPath, costs);
+        tempCost = twoOptMove(&tempPath, costs, bestMove.first, bestMove.second);
 
         if(tempCost < bestCost) {
             bestCost = tempCost;
