@@ -58,13 +58,14 @@ void addRestrictionToTabuList(int i, int j) {
 }
 
 /* Path utilities */
-int getPathCost(vector<int> path, vector<vector<int> > costs) {
+// not used anymore
+/*int getPathCost(vector<int> path, vector<vector<int> > costs) {
     int total = 0;
     for (size_t i = 0; i < path.size()-1; i++) {
         total += costs[path[i]-1][path[i+1]-1];
     }
     return total;
-}
+}*/
 
 bool isValidPath(vector<int> path, vector<vector<int> > costs){
     vector<int> waitingForPrecedent; // Store nodes waiting for a precedent node still not visited
@@ -83,13 +84,12 @@ bool isValidPath(vector<int> path, vector<vector<int> > costs){
 }
 
 
-int twoOptMove(vector<int> *path, vector<vector<int> > costs, int i, int j) {
+int twoOptMove(vector<int> *path, vector<vector<int> > costs, int i, int j, int pathCost) {
     // i e j são os indices dos vértices no vetor path
     // Based on https://stackoverflow.com/questions/33043991/trouble-with-the-implementation-of-2-opt-and-3-opt-search-in-the-resolution-of-t
 
     vector<int> helpPath;
     helpPath.resize(path->size());
-    int cost = 0;
 
     // compute new tour
     for(int k = 0; k <= i; k++) {
@@ -102,9 +102,13 @@ int twoOptMove(vector<int> *path, vector<vector<int> > costs, int i, int j) {
         helpPath[k] = (*path)[k];
     }
 
-    (*path) = helpPath;
+    for(int k = i; k <= j; k++){
+	    pathCost += costs[helpPath[k]-1][helpPath[k+1]-1];
+	    pathCost -= costs[(*path)[k]-1][(*path)[k+1]-1];
+    }
 
-    return getPathCost((*path),costs);
+    (*path) = helpPath;
+    return pathCost;
 }
 
 
@@ -115,7 +119,7 @@ pair<int, int> twoOptSearch(vector<int> path, vector<vector<int> > costs, int pa
     bool foundBetterSolution = false;
     vector<pair<int, int> > bestFounds;
     // repeat until there are not new improvement
-    for(int i = 1; i < path.size() - 3; i++){
+    for(int i = 0; i < path.size() - 3; i++){
         for(int j = i + 1; j < path.size() - 2; j++){
             probability = rand() % 10 + 1; // random number between 1 and 10
             //cout << "PROBABILITY " << probability << endl;
@@ -127,7 +131,7 @@ pair<int, int> twoOptSearch(vector<int> path, vector<vector<int> > costs, int pa
             oldCost = pathCost;
 
             vector<int> newPath = path;
-            newCost = twoOptMove(&newPath, costs, i, j);
+            newCost = twoOptMove(&newPath, costs, i, j, pathCost);
 
             change = newCost - oldCost;
 
@@ -311,13 +315,13 @@ int main(int argc, const char * argv[]) {
             break;
         }
 
-        tempCost = twoOptMove(&tempPath, costs, bestMove.first, bestMove.second);
+        tempCost = twoOptMove(&tempPath, costs, bestMove.first, bestMove.second, tempCost);
 
         if(tempCost < bestCost) {
             bestCost = tempCost;
             bestPath = tempPath;
             iterationsCounter = MAX_ITERATIONS;
-        }
+	}
     }
 
     clock_t end = clock();
