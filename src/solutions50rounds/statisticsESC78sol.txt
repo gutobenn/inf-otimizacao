@@ -1,0 +1,5 @@
+Mean initial solution: 22600.0
+Mean solutions: 21812.0
+Standard deviation solutions: 519.014450666
+Mean percentual deviation: 19.6489303346
+Mean execution time: 27.82915
